@@ -49,3 +49,5 @@
   - [Generate favicon (Downloadable as zip)]()
   - [Generate HTML code for icon]()
   - [Can save data inform of sessions and come back later]()
+
+### **Fork and Clone Repository**
