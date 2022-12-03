@@ -51,3 +51,16 @@
   - [Can save data inform of sessions and come back later]()
 
 ### **Fork and Clone Repository**
+
+1. Visit the Repository to the Project on Github Website: 
+
+    ```
+    https://github.com/zuri-training/Team-Spoonbill2.git
+    ```
+2. Fork the repository: Click the "Fork" button on the upper right corner of the Repo page.
+3. Make a Local Clone: Clone the `FORKED` repository to your local machine (computer)
+
+   - Click on the "Code" button on the Repo page
+   - Copy the URL for the forked Repo 
+   - Create a Folder on your Local machine / Computer for the project Workspace
+   - Open Command prompt / Terminal in the same folder location
