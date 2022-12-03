@@ -33,7 +33,7 @@ We shall create another contributors.md file where we will add our names and par
 
 - #### [Product Documentation]()
 - #### [Figma]()
-- #### [Database Schema]()
+- #### [Database Schema](https://docs.google.com/document/d/197wN1qM7LbAVs1OLCdQ7hApm6RNzywrUfZJNQKYKwHc/edit?usp=sharing)
 - #### [First Presentation]()
 - #### [API Documentation]()
 - #### [Individual Contributions]()
