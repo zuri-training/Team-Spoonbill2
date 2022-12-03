@@ -117,3 +117,9 @@
     ```
 
 ### **Create Pull Request**
+
+11. Once you push the changes to your repo, the **_`Compare & pull request`_** button will appear in GitHub page of your repo.
+12. Click the button and make your request. Leave a comment in your request
+13. Click Create pull request to open a new pull request
+
+### **_`If you are asked to make changes on the same feature, repeat steps 8 to 13 to add more commits to your pull request.`_**
