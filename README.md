@@ -103,3 +103,17 @@
      ```
 
 <!-- - _\* Note: if the Feature is a bug fix, use `bug:message` for your branch and commit message_ -->
+
+
+### **Push New Branch to "Origin" Repository**
+
+9. To make sure there are no conflict, Pull from upstream using 
+    ```
+    git pull upstream main
+    ```
+10. Push your branch changes to the Repo using
+    ```
+    git push upstream main
+    ```
+
+### **Create Pull Request**
