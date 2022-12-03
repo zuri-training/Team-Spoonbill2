@@ -34,3 +34,18 @@
 - #### [API Documentation]()
 - #### [Individual Contributions]()
 
+## User Activity
+
+- Unauthenticated user can view:
+
+  - [Home Page]()
+  - [Browse and interact with the documentation]()
+  - [Register to view more details]()
+  - [No access to use until registered]()
+
+- Authenticated user can:
+  - They have access to all the  features.
+  - [Allow user to upload icon]()
+  - [Generate favicon (Downloadable as zip)]()
+  - [Generate HTML code for icon]()
+  - [Can save data inform of sessions and come back later]()
