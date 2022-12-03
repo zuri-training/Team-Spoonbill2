@@ -64,3 +64,12 @@
    - Copy the URL for the forked Repo 
    - Create a Folder on your Local machine / Computer for the project Workspace
    - Open Command prompt / Terminal in the same folder location
+    - In your Terminal, type:
+         ```
+         git clone {url of the forked repo}
+         ```
+    - ### Switch to the project directory
+
+        ```
+        cd Team-Spoonbill2
+        ```    
