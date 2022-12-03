@@ -23,7 +23,11 @@
 ## Team-Spoonbill2
 
 
+Since this is the beginning stage of our project, We shall use the resources link below to add the required links as indicated
 
+*Will be edited on readme*
+
+We shall create another contributors.md file where we will add our names and parts we have worked on
 
 ## Resource
 
