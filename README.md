@@ -73,3 +73,33 @@
         ```
         cd Team-Spoonbill2
         ```    
+### **Add "Remote To" and "Pull From" Upstream**
+
+4. Add a Remote to Upstream to your Repo:
+   - In your terminal, type:
+     ```
+     git clone https://github.com/github_username/Team-Spoonbill2.git
+     ```
+5. Pull from upstream to download all changes in the project using 
+    ```
+    git pull upstream main
+    ```
+
+### **Finish assigned Task / Issue**
+
+6. Open the Project up in your code Editor
+7. Complete your assigned task / Feature on your local machine.
+
+8. When you are ready to add and push your feature / task to the Repo,
+   <!-- - Create a new branch with your feature / task name you are adding e.g "ft-Add new channel". To do this, type:
+     `git checkout -b ft-Add new channel` -->
+   - Add your changes using:
+     ```
+     git add .  
+      ```
+   - Commit your changes to the branch with a message using
+     ```
+     git commit -m "Commit message"
+     ```
+
+<!-- - _\* Note: if the Feature is a bug fix, use `bug:message` for your branch and commit message_ -->
