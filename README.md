@@ -84,7 +84,8 @@ We shall create another contributors.md file where we will add our names and par
     - img
     - js
 
-All Frontend development will be done in the `Public` folder
+#### `NOTE` :  All Frontend development will be done in the `Public` folder
+
 ### **Fork and Clone Repository**
 
 1. Visit the Repository to the Project on Github Website: 
