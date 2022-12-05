@@ -76,7 +76,8 @@ We shall create another contributors.md file where we will add our names and par
   - [Can save data inform of sessions and come back later]()
 
 ## About the Project Structure
------------
+---
+
 
 
 ### **Fork and Clone Repository**
