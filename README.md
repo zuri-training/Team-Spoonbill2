@@ -77,7 +77,7 @@ We shall create another contributors.md file where we will add our names and par
 
 ## About the Project Structure
 ---
-
+### The project has been implemented using the following structure;
 
 
 ### **Fork and Clone Repository**
