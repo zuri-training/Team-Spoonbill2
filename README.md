@@ -79,8 +79,11 @@ We shall create another contributors.md file where we will add our names and par
 ---
 ### The project has been implemented using the following structure;
 #### The directories include;
-
-
+- ### Public
+    - css
+    - img
+    - js
+<!-- *Frontend ** -->
 ### **Fork and Clone Repository**
 
 1. Visit the Repository to the Project on Github Website: 
