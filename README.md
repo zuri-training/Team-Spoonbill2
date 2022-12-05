@@ -75,6 +75,8 @@ We shall create another contributors.md file where we will add our names and par
   - [Generate HTML code for icon]()
   - [Can save data inform of sessions and come back later]()
 
+## About the Project Structure
+
 ### **Fork and Clone Repository**
 
 1. Visit the Repository to the Project on Github Website: 
