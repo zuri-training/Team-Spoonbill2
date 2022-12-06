@@ -1,22 +1,22 @@
 {
-  "name": "team-spoonbill2",
-  "version": "1.0.0",
-  "description": "favicon generator",
-  "main": "index.js",
-  "scripts": {
-    "test": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ivandamien/Team-Spoonbill2.git"
-  },
-  "author": "Ivan Okello",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Ivandamien/Team-Spoonbill2/issues"
-  },
-  "homepage": "https://github.com/Ivandamien/Team-Spoonbill2#readme",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+    "name": "team-spoonbill2",
+    "version": "1.0.0",
+    "description": "favicon generator",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ivandamien/Team-Spoonbill2.git"
+    },
+    "author": "Ivan Okello",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Ivandamien/Team-Spoonbill2/issues"
+    },
+    "homepage": "https://github.com/Ivandamien/Team-Spoonbill2#readme",
+    "dependencies": {
+        "express": "^4.18.2"
+    }
 }
