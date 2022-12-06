@@ -83,6 +83,7 @@ We shall create another contributors.md file where we will add our names and par
     - css
     - img
     - js
+- ### Backend
 
 #### `NOTE` :  All Frontend development will be done in the `Public` folder
 
