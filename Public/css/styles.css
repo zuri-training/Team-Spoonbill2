@@ -1,3 +1,5 @@
+/*Start of CSS*/
+
 @font-face {
     font-family: Outfit;
     src: url(Outfit-Regular.ttf);
@@ -217,7 +219,7 @@ nav a {
 .Section4 {
     letter-spacing: 0em;
     color: #000000;
-    padding: 2em 4em;
+    padding: 2em 2em;
 }
 
 .Section4 h1 {
@@ -227,3 +229,36 @@ nav a {
     letter-spacing: 0em;
     text-align: center;
 }
+
+/*Fourth Section's Article*/
+
+.article1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    margin-bottom: 4em;
+}
+
+.article1 h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.article1 p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.box2-1 {
+    width: 402px;
+    height: 228px;
+}
+
+/*Footer*/
