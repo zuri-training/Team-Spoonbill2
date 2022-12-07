@@ -71,7 +71,7 @@ nav a {
 /*First Section*/
 
 .Section1 {
-    padding: 0.7em 18em 7em 17em;
+    padding: 0.7em 18em 7em 15em;
     letter-spacing: 0em;
     color: #000000;
     background-color: #EFEEEE;
@@ -94,7 +94,6 @@ nav a {
 }
 
 .Section1 a {
-    font-family: Outfit;
     font-size: 28px;
     font-weight: 500;
     line-height: 35px;
@@ -102,7 +101,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 2.4em;
+    margin-right: 2.7em;
 }
 
 /*Second Section*/
