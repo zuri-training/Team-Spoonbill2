@@ -47,3 +47,8 @@ All changes happen through pull requests. Pull requests are the best way to prop
 11. If you've added code that should be tested, add some test examples.
 
  Your changes will be merged into the `main` branch when they are approved by the reviewer.
+ 
+## Quickstart Local Frontend Development
+
+## Manual Full Local Development
+How to run locally:
