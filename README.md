@@ -90,6 +90,7 @@ We shall create another contributors.md file where we will add our names and par
     - routes
 
 #### `NOTE` :  All Frontend development will be done in the `Public` folder
+#### `NOTE` :  All Backend development will be done in the `Backend` folder
 
 ### **Fork and Clone Repository**
 
