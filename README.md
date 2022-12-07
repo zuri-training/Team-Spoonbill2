@@ -92,6 +92,8 @@ We shall create another contributors.md file where we will add our names and par
 #### `NOTE` :  All Frontend development will be done in the `Public` folder
 #### `NOTE` :  All Backend development will be done in the `Backend` folder
 
+please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details of the project
+
 ### **Fork and Clone Repository**
 
 1. Visit the Repository to the Project on Github Website: 
