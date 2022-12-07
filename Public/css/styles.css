@@ -3,7 +3,7 @@
     src: url(Outfit-Regular.ttf);
 }
 
-body {
+* {
     margin: auto;
     padding: auto;
     font-family: Outfit;
