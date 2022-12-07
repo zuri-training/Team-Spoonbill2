@@ -1,0 +1,164 @@
+@font-face {
+    font-family: Outfit;
+    src: url(Outfit-Regular.ttf);
+}
+
+body {
+    margin: auto;
+    padding: auto;
+    font-family: Outfit;
+}
+
+/*navigation*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #EFEEEE;
+    padding: 0.4em;
+}
+.logo {
+    margin-right: 4em;
+}
+
+.logo>img {
+    height: 36px;
+    line-height: 45.36px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 30.24px;
+    margin-right: 3em;
+    letter-spacing: 0em;
+}
+
+.menu1 {
+    padding: 1em 0.7em;
+}
+
+.menu2 {
+    padding: 1em 0.7em;
+    margin-left: 9em;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .70rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*First Section*/
+
+.Section1 {
+    padding: 0.7em 18em 7em 17em;
+    letter-spacing: 0em;
+    color: #000000;
+    background-color: #EFEEEE;
+}
+
+.Section1 h1 {
+    padding: 0.1em;
+    width: 120%;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 70.56px;
+    margin-bottom: -17px;
+}
+
+.Section1 p {
+    width: 93%;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40.32px;
+}
+
+.Section1 a {
+    font-family: Outfit;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.4em;
+}
+
+/*Second Section*/
+
+.Section2 {
+    padding: 5em;
+    letter-spacing: 0em;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.box1 {
+    width: 734px;
+    height: 398px;
+    background-color: #EFEEEE;
+}
+
+.box2 {
+    width: 734px;
+    height: 398px;
+    margin-right: -4em;
+}
+
+.box2 h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0%;
+}
+
+.box2 p {
+   font-size: 32px;
+   font-weight: 300;
+   line-height: 42px;
+   letter-spacing: 0em;
+
+}
+
+/*Third Section*/
+
+.Section3 {
+    padding: 0.7em 18em 7em 17em;
+    letter-spacing: 0em;
+    color: #000000;
+    background-color: #EFEEEE;
+}
+
+.Section3 h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+}
