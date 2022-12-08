@@ -57,3 +57,22 @@ How to run locally:
 2. **MongoDB** (installed)
 4. **Nodejs** (installed)
 5. **NPM** / **Yarn** (installed)
+
+## Getting Started
+
+1. Clone the repo.
+
+#### Frontend.
+
+2. move into the `frontend` folder 
+3. Install all projects dependencies using `npm install` or `yarn`
+4. Start frontend development server. `npm start`. this should startup a local server at `http://localhost:3000` we will be using parcel bundler at the end
+
+<!-- 
+#### Backend.
+
+2. move into the `backend` folder 
+3. Install all projects dependencies using `npm install`.
+4. Start backend server locally.. `npm run dev`. This should startup a local server at `http://localhost:5000`
+5. Start make sure MongoDB server. -->
+
