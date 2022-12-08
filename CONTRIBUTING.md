@@ -52,3 +52,8 @@ All changes happen through pull requests. Pull requests are the best way to prop
 
 ## Manual Full Local Development
 How to run locally:
+
+## Tech Requirement
+2. **MongoDB** (installed)
+4. **Nodejs** (installed)
+5. **NPM** / **Yarn** (installed)
