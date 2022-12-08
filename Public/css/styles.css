@@ -58,6 +58,14 @@ nav a {
     margin-left: 9em;
 }
 
+.menu2 a {
+    color: #FFFFFF;
+    background-color: #FFAD03;
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
 .menu1 a.active {
     color: #9D54DE;
 }
@@ -455,13 +463,4 @@ footer>ul>li {
     font-weight: 400;
     line-height: 40px;
     text-decoration: none;   
-}
-
-.twitter i {
-    color: #1D9BF0;
-}
-
-.instagram i {
-    background: radial-gradient(407.51% 247.59% at -16.69% 161.77%, #FED576 0%, #F47133 26.3%, #BC3081 60.9%, #4C63D2 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    color: mediumorchid;
 }
