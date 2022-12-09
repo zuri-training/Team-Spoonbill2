@@ -51,15 +51,22 @@ const userSchema = new mongoose.Schema({
 
 // Defining an instance method for hashing password
 userSchema.pre('save', async function (next) {
-    // // Only run this function if password was actually modified
+    // Only run this function if password was actually modified
     if (!this.isModified('password')) return next();
-    // // Hash the password with a cost of 12
+    // Hash the password with a cost of 12
     this.password = await bcrypt.hash(this.password, 12);
 
-    // // Delete password field
+    // Delete password field
     this.passwordConfirm = undefined
     next()
-})
+});
+
+// Defining an instance method to check if password has been changed
+userSchema.pre('save', function (next) {
+    if (!this.isModified('password') || this.isNew) return next();
+    this.passwordChangedAt = Date.now() - 1000;
+});
+
 
 const User = mongoose.model('User', userSchema);
 module.exports = User;
