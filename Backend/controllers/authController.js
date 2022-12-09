@@ -11,6 +11,7 @@ const signToken = id => {
 
 
 
+
 exports.signup = async (req, res) => {
     
     const newUser = await User.create({
