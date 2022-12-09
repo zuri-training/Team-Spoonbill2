@@ -66,6 +66,12 @@ nav a {
     border-radius: 7px;
 }
 
+.menu2>.different {
+    background-color: #E7D4F7;
+    border: 1px solid #FFAD03;
+    color: #000000;
+}
+
 .menu1 a.active {
     color: #9D54DE;
 }
@@ -220,6 +226,27 @@ nav a {
 .box1-2>img {
     width: 734px;
     height: 295px;
+}
+
+.box1-2 p {
+    font-size: 40px;
+    position: absolute;
+    left: 52%;
+    top: 190%;
+}
+
+.box1-3 p {
+    font-size: 40px;
+    position: absolute;
+    left: 55%;
+    top: 245.9%;
+}
+
+.box1-4 p {
+    font-size: 40px;
+    position: absolute;
+    left: 52%;
+    top: 301%;
 }
 
 .box1-1 h2 {
@@ -463,4 +490,8 @@ footer>ul>li {
     font-weight: 400;
     line-height: 40px;
     text-decoration: none;   
+}
+
+.foot3 i {
+    color: #FFFFFFE5;
 }
