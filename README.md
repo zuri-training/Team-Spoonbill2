@@ -75,6 +75,25 @@ We shall create another contributors.md file where we will add our names and par
   - [Generate HTML code for icon]()
   - [Can save data inform of sessions and come back later]()
 
+## About the Project Structure
+---
+### The project has been implemented using the following structure;
+#### The directories include;
+- ### Public
+    - css
+    - img
+    - js
+- ### Backend
+    - models
+    - view
+    - controllers
+    - routes
+
+#### `NOTE` :  All Frontend development will be done in the `Public` folder
+#### `NOTE` :  All Backend development will be done in the `Backend` folder
+
+please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details of the project
+
 ### **Fork and Clone Repository**
 
 1. Visit the Repository to the Project on Github Website: 

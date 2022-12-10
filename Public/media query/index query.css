@@ -1,0 +1,85 @@
+@media screen and (max-width: 768px) {
+   
+    /*nav*/
+    
+       .toggle-button {
+         display: flex;
+     }
+ 
+     nav {
+         padding: 1.2em;
+     }
+ 
+     .menu1 {
+         display: none;
+         width: 100%;
+         text-align: center;
+         padding: 2px;
+         flex-direction: column;
+     }
+
+     .menu2 {
+        display: none;
+     }
+ 
+    menu a {
+      margin-left: 0;
+    }
+ 
+     .menu.active {
+         display: flex;
+     }
+
+     /*First Section*/
+
+     .Section1 {
+        padding: 0.7em 0.1em 4em 14em;
+    }
+
+    .Section1 h1 {
+        width: 400%;
+        font-size: 40px;
+        line-height: 40.56px;
+        margin-left: -4em;
+        margin-bottom: -17px;
+    }
+
+    .Section1 p {
+        width: 400%;
+        font-size: 30px;
+        line-height: 30px;
+        margin-left: -4.9em;
+    }
+
+    /*Second Section*/
+
+    .Section2 {
+        padding: 4em 20.64em;
+        flex-direction: column;
+    }
+
+    .box1 {
+        width: 600px;
+        height: 298px;
+    }
+
+    .box1>img {
+        width: 600px;
+        height: 298px;
+    }
+    
+    .box2 {
+        width: 300px;
+        margin-top: 0em;
+    }
+
+    .box2 h2 {
+        width: 130%;
+    }
+    
+    .box2 p {
+       font-size: 24px;
+       width: 130%;
+    
+    }
+} 
