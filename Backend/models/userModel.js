@@ -67,6 +67,13 @@ userSchema.pre('save', function (next) {
     this.passwordChangedAt = Date.now() - 1000;
 });
 
+// The find all active users instance method
+userSchema.pre('save', function (next) {
+    // This points to the current query
+    this.find({ active: { $ne: false } });
+    next();
+});
+
 
 const User = mongoose.model('User', userSchema);
 module.exports = User;
