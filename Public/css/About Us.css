@@ -1,0 +1,18 @@
+.About {
+    padding: 1em 0em 5em 7em;
+}
+
+.About h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 71px; 
+    color: #1C1C1C;
+}
+
+.About p {
+    width: 80%;
+    font-size: 30px;
+    line-height: 125.5%;
+    color: #1C1C1C;
+}
