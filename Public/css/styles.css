@@ -124,7 +124,7 @@ nav a {
     margin-bottom: 10px;
 }
 
-.Section1 a {
+/*.Section1 a {
     color: #FFFFFF;
     background-color: #FFAD03;
     border: 1px solid #FFAD03;
@@ -137,7 +137,7 @@ nav a {
     line-height: 35px;
     letter-spacing: 0em;
     margin-right: 2.7em;
-}
+}/*
 
 .Section1 i {
     color: #9D4EDD;
@@ -471,27 +471,13 @@ footer>ul>li {
     margin-top: 10px;
 }
 
-.foot1 a {
+.foot a {
     color: #000000E5;
     font-weight: 400;
     line-height: 45px;
     text-decoration: none;
 }
 
-.foot2 a {
-    color: #000000E5;
-    font-weight: 400;
-    line-height: 45px;
-    text-decoration: none;
-}
-
-.foot3 a {
-    color: #FFAD03;
-    font-weight: 400;
-    line-height: 40px;
-    text-decoration: none;   
-}
-
-.foot3 i {
+.foot i {
     color: #FFFFFFE5;
 }
