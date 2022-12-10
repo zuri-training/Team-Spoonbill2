@@ -1,4 +1,5 @@
-const express = require('express')
+const express = require('express');
+const globalErrorHandler= require('../Backend/controllers/errorController')
 const morgan = require('morgan');
 const userRouter =require('./routes/userRoutes')
 const app = express();
@@ -15,5 +16,5 @@ if (process.env.NODE_ENV === 'development') {
 
 // Routes
 app.use('/api/users', userRouter);
-
+app.use(globalErrorHandler);
 module.exports = app;

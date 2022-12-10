@@ -68,11 +68,19 @@ userSchema.pre('save', function (next) {
 });
 
 // The find all active users instance method
-userSchema.pre('save', function (next) {
+userSchema.pre('/^find/', function (next) {
     // This points to the current query
     this.find({ active: { $ne: false } });
     next();
 });
+
+// comparing passwords to help in loggin functionality
+userSchema.methods.correctPassword = async function (
+    candidatePassword,
+    userPassword) {
+    return await bcrypt.compare(candidatePassword, userPassword)
+};
+
 
 
 const User = mongoose.model('User', userSchema);
