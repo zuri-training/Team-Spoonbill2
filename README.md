@@ -83,8 +83,16 @@ We shall create another contributors.md file where we will add our names and par
     - css
     - img
     - js
+- ### Backend
+    - models
+    - view
+    - controllers
+    - routes
 
 #### `NOTE` :  All Frontend development will be done in the `Public` folder
+#### `NOTE` :  All Backend development will be done in the `Backend` folder
+
+please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details of the project
 
 ### **Fork and Clone Repository**
 
