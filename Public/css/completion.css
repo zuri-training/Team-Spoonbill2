@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{ 
+    background: #FAFAFA;
+    width: 100%;
+    padding: 5%;
+    max-height: 100%;
+    margin: auto;
+}
+
+/* navigation */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E7D4F7;
+    color: #fff;
+    padding: 2.4em;
+   
+}
+
+.logo{
+    margin-right: 4em;
+}
+.logo img{
+    width: 322.44;
+    height: 65px;
+    line-height: 45.36px;
+}
+
+nav{
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: #B3A1BE;
+    line-height: 30.24px;
+    margin-left: 1em;
+    letter-spacing: 0em;
+}
+
+a{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: #B3A1BE;
+    line-height: 30.24px;
+    margin-left: 2em;
+    letter-spacing: 0em;
+}
+
+.menu1 {
+    padding: 2em 0.7em;
+
+}
+
+.menu2 {
+    padding: 0.8em;
+    padding-left: 3em;
+    margin-left: 10em;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 30px;
+    color: #3F3F3F;
+}
+
+.menu2 .different{
+    color: #000000;
+}
+a.active{
+    color:#9D54DE; 
+}
+
+.toggle-button{
+    position: absolute;
+    top: .70rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.headings{
+    text-align: center;
+    padding: 2%;
+}
+
+h1{
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 81px;
+text-align: center;
+color: #000000;
+padding: 2%;
+}
+
+.subheading{
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 45px;
+text-align: center;
+color: #000000;
+padding: 2px;
+}
+
+.btn{
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+text-align: center;
+
+}
+
+.download, .create{
+    border: 1px solid #FFAD03;
+    border-radius: 16px;
+    margin: 30px 5px 0px 5px;
+} 
+
+.download{
+    background: #FFAD03;
+    color: #fff;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    width: 575px;
+    height: 110px;
+}
+
+.create{
+background: none;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+width: 575px;
+height: 110px;
+color: rgba(33, 33, 33, 0.8);
+}
+
+#textarea{
+    box-sizing: border-box;
+    width: 70%;
+    height: 240px;
+    border: 1px solid #FFAD03;
+    border-radius: 15px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.copy{
+    background: #FFAD03;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Outfit';
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 10px;
+    width: 169px;
+    height: 45px;
+}
+
+.copybtn{
+    margin-left: 340px;
+}
+
+.box{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 1.5rem;
+    margin: 100px;
+    margin-top: 100px;
+
+}
+
+.sectionOne{
+    padding: auto;
+    margin: 0 auto;
+}
+
+.sectionTwo{
+    padding: 80px 200px;
+}
+
+.sectionTwo h4{
+    margin-top: 70px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #747474;
+    padding: 20px;
+}
+
+h2{
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 56px;
+line-height: 71px;
+color: rgba(33, 33, 33, 0.9);
+}
+
+h3{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 71px;
+    color: rgba(33, 33, 33, 0.9);
+    }
+
+h4{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: #212121;
+    margin-top: 50px;
+}
+
+.sectionTwo h4.active{
+    border-left: 10px solid #9D4EDD;
+    border-radius: 5px;
+}
+
+p{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #212121;
+}
+
+.one{
+    margin-bottom: 30px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 80px 140px;
+    background: #E7D4F7;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 1.5rem;
+}
+
+.boxes {
+    width: 100%;
+    margin-left: 100px;
+    padding-left: 100px;
+}
+
+.boxes h3{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-left: 70px;
+   
+    }
+
+.boxes a{
+    display: block;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 45px;
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+}
+
+@media (max-width:450px) {
+
+    html{
+        font-size: 50%;
+        width: 100%;
+    }
+    header{
+        display: block;
+        padding: 10px;
+        height: 300px;
+        max-width: 100%;
+    }
+    .logo{
+        margin-right: 0em;
+    }
+    .logo img{
+       
+        height: 67px;
+        line-height: 15.36px;
+    }
+   
+    nav a{
+        display: block;
+        text-decoration: none;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        color: #B3A1BE;
+        line-height: 30.24px;
+        margin-left: 0.2em;
+        letter-spacing: 0em;
+    }
+
+    .menu2 {
+        display: box;
+        font-family: 'Outfit';
+        font-weight: 400;
+        font-size: 10px;
+        color: #3F3F3F;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .copybtn{
+        margin: auto;
+       
+    }
+    .copybtn a{
+        margin: auto;
+        font-size: 30px;
+    }
+    .box, .sectionTwo{
+        margin: auto;
+        padding: 0;
+    }
+
+    .footer{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+}
+
