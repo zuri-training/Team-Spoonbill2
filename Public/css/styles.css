@@ -124,7 +124,7 @@ nav a {
     margin-bottom: 10px;
 }
 
-/*.Section1 a {
+.Section1 a {
     color: #FFFFFF;
     background-color: #FFAD03;
     border: 1px solid #FFAD03;
@@ -137,7 +137,7 @@ nav a {
     line-height: 35px;
     letter-spacing: 0em;
     margin-right: 2.7em;
-}/*
+}
 
 .Section1 i {
     color: #9D4EDD;
@@ -464,9 +464,9 @@ footer {
     gap: 7em;
 }
 
-footer>ul>li {
+footer ul li {
     color: #000000;
-    list-style: none;
+    list-style-type: none;
     font-size: 22px;
     margin-top: 10px;
 }
@@ -478,6 +478,6 @@ footer>ul>li {
     text-decoration: none;
 }
 
-.foot i {
+.foot i { 
     color: #FFFFFFE5;
 }
