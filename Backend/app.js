@@ -43,13 +43,13 @@ faviconGen.then((response) => {
         if (err) throw err;
       });
     });
-    
-}  // fs.writeFile('./Backend/Icons/iconGen/', data);
+
+  };  // fs.writeFile('./Backend/Icons/iconGen/', data);
   // console.log('File written');
 
-  // writeImage(response)
-  
-).catch((error) => {
+  writeImage(response);
+
+}).catch((error) => {
   console.log(error.messages)
 })
 
