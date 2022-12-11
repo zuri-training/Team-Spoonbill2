@@ -20,16 +20,17 @@ header{
     align-items: center;
     background: #E7D4F7;
     color: #fff;
-    padding: 2.4em;
+    padding: 0.2em;
    
 }
 
 .logo{
-    margin-right: 4em;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 .logo img{
-    width: 322.44;
-    height: 65px;
+    width: 222.44;
+    height: 45px;
     line-height: 45.36px;
 }
 
@@ -42,10 +43,10 @@ nav a{
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 25px;
     color: #B3A1BE;
     line-height: 30.24px;
-    margin-left: 1em;
+    margin-left: 0.5em;
     letter-spacing: 0em;
 }
 
@@ -56,19 +57,25 @@ a{
     font-size: 32px;
     color: #B3A1BE;
     line-height: 30.24px;
-    margin-left: 2em;
+    margin-left: 1em;
     letter-spacing: 0em;
+}
+
+a img{
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    padding-bottom: 0;
 }
 
 .menu1 {
     padding: 2em 0.7em;
-
 }
 
 .menu2 {
     padding: 0.8em;
     padding-left: 3em;
-    margin-left: 10em;
+    margin-left: 3em;
     font-family: 'Outfit';
     font-weight: 400;
     font-size: 30px;
@@ -107,7 +114,7 @@ h1{
 font-family: 'Outfit';
 font-style: normal;
 font-weight: 700;
-font-size: 64px;
+font-size: 44px;
 line-height: 81px;
 text-align: center;
 color: #000000;
@@ -118,7 +125,7 @@ padding: 2%;
 font-family: 'Outfit';
 font-style: normal;
 font-weight: 400;
-font-size: 36px;
+font-size: 26px;
 line-height: 45px;
 text-align: center;
 color: #000000;
@@ -129,8 +136,8 @@ padding: 2px;
 font-family: 'Outfit';
 font-style: normal;
 font-weight: 400;
-font-size: 40px;
-line-height: 50px;
+font-size: 30px;
+line-height: 40px;
 text-align: center;
 
 }
@@ -147,10 +154,10 @@ text-align: center;
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
-    width: 575px;
-    height: 110px;
+    font-size: 30px;
+    line-height: 40px;
+    width: 450px;
+    height: 100px;
 }
 
 .create{
@@ -158,10 +165,10 @@ background: none;
 font-family: 'Outfit';
 font-style: normal;
 font-weight: 400;
-font-size: 40px;
-line-height: 50px;
-width: 575px;
-height: 110px;
+font-size: 30px;
+line-height: 40px;
+ width: 450px;
+height: 100px;
 color: rgba(33, 33, 33, 0.8);
 }
 
@@ -193,13 +200,13 @@ color: rgba(33, 33, 33, 0.8);
 }
 
 .copybtn{
-    margin-left: 340px;
+    margin-left: 180px;
 }
 
 .box{
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap: 1.5rem;
     margin: 100px;
     margin-top: 100px;
@@ -212,16 +219,17 @@ color: rgba(33, 33, 33, 0.8);
 }
 
 .sectionTwo{
-    padding: 80px 200px;
+    padding: 30px 50px;
+    margin-top: 50px;
 }
 
 .sectionTwo h4{
-    margin-top: 70px;
+    margin-top: 100px;
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 40px;
     color: #747474;
     padding: 20px;
 }
@@ -230,8 +238,8 @@ h2{
 font-family: 'Outfit';
 font-style: normal;
 font-weight: 600;
-font-size: 56px;
-line-height: 71px;
+font-size: 40px;
+line-height: 40px;
 color: rgba(33, 33, 33, 0.9);
 }
 
@@ -239,8 +247,8 @@ h3{
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
-    line-height: 71px;
+    font-size: 37px;
+    line-height: 41px;
     color: rgba(33, 33, 33, 0.9);
     }
 
@@ -248,28 +256,29 @@ h4{
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 500;
-    font-size: 36px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 50px;
     color: #212121;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .sectionTwo h4.active{
     border-left: 10px solid #9D4EDD;
     border-radius: 5px;
+    color: #000000;
 }
 
 p{
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 30px;
     color: #212121;
 }
 
 .one{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .footer{
@@ -277,30 +286,30 @@ p{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 80px 140px;
+    padding: 30px 70px;
     background: #E7D4F7;
 }
 
 .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 0.5rem;
 }
 
 .boxes {
     width: 100%;
-    margin-left: 100px;
-    padding-left: 100px;
+    margin-left: 20px;
+    padding-left: 20px;
 }
 
 .boxes h3{
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 40px;
     color: rgba(0, 0, 0, 0.9);
-    margin-left: 70px;
+    margin-left: 20px;
    
     }
 
@@ -309,8 +318,8 @@ p{
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 45px;
+    font-size: 20px;
+    line-height: 30px;
     color: rgba(0, 0, 0, 0.9);
     text-decoration: none;
 }
