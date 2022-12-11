@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display
+    &family=Inter&family=Lexend+Deca&family=Outfit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <header>
+        <div class="container navbar">
+            <div class="right-side">
+                <div class="logo">
+                    <img src="https://i.postimg.cc/cJk1MjRc/bilicon-low-resolution-color-logo-2.png" alt="">
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            <a href="#">
+                                <li class="home-link">Home</li>
+                            </a>
+                            <a href="#">
+                                <li>About</li>
+                            </a>
+                            <a href="#">
+                                <li>Contact Us</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="left-side">
+                <a href="#" target="_parent" rel="noopener noreferrer"><button class="signup-btn">Signup</button></a>
+                <a href="#" target="_parent" rel="noopener noreferrer"><button class="login-btn">Login</button></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container signup-form">
+            <div>
+                <h2 class="form-header">Create a free account</h2>
+            </div>
+            <form action="#" method="post">
+                <div>
+                    <div class="user-info">
+                        <label class="input-label" for="user-email">Email</label>
+                        <br>
+                        <input type="email" placeholder="example@gmail.com" name="Email" id="user-email" required>
+                    </div>
+                    <div class="user-info">
+                        <label for="user-password">Password</label>
+                        <br>
+                        <input type="password" placeholder="Enter your password" name="password1" id="user-password" required>
+                    </div>
+                    <div class="user-info">
+                        <label for="user-passowrd">Reapeat passowrd</label>
+                        <br>
+                        <input type="password" placeholder="Repeat password" name="password2" id="user-passowrd">
+                    </div>
+                    <div class="questions">
+                        <div>
+                            <input type="checkbox" name="" id="user-option">
+                            <label class="user-option-text" for="user-option">Remember me</label>
+                        </div>
+                        <div>
+                            <p class="account-availability">Already have an account? <a class="signin-link" href="#" target="_parent"
+                                    rel="noopener noreferrer">Sign in</a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="submit-button-div">
+                        <button  class="submit-button" type="submit">Sign up</button>
+                    </div>
+                </div>
+            </form>
+            <div class="user-option">
+                <p class="user-option-text">Sign in with <a class="google-link" href="#" target="_parent" rel="noopener noreferrer">Google</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
