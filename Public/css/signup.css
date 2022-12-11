@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FCFAFA;
+  font-family: outfit, sans-serif;
+}
+
+.container {
+  margin: 0 50px 0 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/*HEADER*/
+
+header {
+  background-color: #DCCAE6;
+}
+
+.container.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 47px 0 44px;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 322.44px;
+  height: 67px;
+  margin: 0 86px 0 44px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.home-link {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #72369D;
+}
+
+
+a li {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #B3A1BE;
+  margin: 0 72px 0 0;
+}
+
+.left-side {
+  margin: 0 145px 0 0;
+}
+
+.signup-btn {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 12px 20px;
+  background: #E8D7F6;
+  border: 1px solid #FFAD03;
+  border-radius: 5px;
+  margin: 0 97px 0 0;
+}
+
+.login-btn {
+  padding: 12px 20px;
+  gap: 8px;
+  background: #FFAD03;
+  border-radius: 5px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #FFAD03;
+}
+
+/*SIGN UP FORM*/
+
+.showcase {
+  display: flex;
+  justify-content: center;
+  margin: 98px 0 117px 0;
+
+}
+
+.container.signup-form {
+  width: 800px;
+  height: 744px;
+  box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: rgb(242, 242, 242);
+
+
+}
+
+.form-header {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  margin: 61px 0 26px 0;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.user-info {
+  text-align: left;
+  margin: 24px 0 0 0;
+}
+
+label {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+  width: 110px;
+  height: 24px;
+  margin: 0 0 8px 0;
+}
+
+input {
+  width: 521px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 8px 0 0 0;
+  border: 1px solid #B67BE6;
+  border-radius: 4px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0 0 0 31px;
+
+}
+
+input:hover{
+  border: 3px solid  #B67BE6 ;
+}
+
+input:focus {
+  outline: #B67BE6 1px solid;
+
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0 0 0;
+}
+
+.account-availability {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.signin-link {
+  color: #FA8C02;
+}
+
+.signin-link:hover{
+  font-size: 18px;
+}
+
+#user-option {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #B67BE6;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.user-option-text {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.submit-button-div {
+  text-align: center;
+}
+
+.submit-button {
+  width: 521px;
+  height: 64px;
+  background: #9747FF;
+  border-radius: 5px;
+  color: #F5F5F5;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  border: none;
+  margin: 40px 0 0 0;
+}
+
+.submit-button:hover{
+  background:  #9e66cb;
+}
+
+.user-option {
+  text-align: center;
+  margin: 16px 0 0 0;
+}
+
+
+.user-option-text {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+}
+
+.google-link {
+  color: #FA8C02;
+
+}
+
+.google-link:hover{
+  font-size: 24px;
+}
