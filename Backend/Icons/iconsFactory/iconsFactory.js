@@ -1,6 +1,6 @@
 
 
-exports.source = '../images/part.png';
+// exports.source = '../images/part.png';
 
 exports.configuration = {
     path: '/Backend/Icons/iconGen/',
