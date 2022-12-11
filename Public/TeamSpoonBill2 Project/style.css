@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  /* max-height: 100vh; */
+}
+.hero1 {
+  display: flex;
+  margin-left: 20%;
+  box-sizing: border-box;
+}
+
+.bodyText {
+  width: 80%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+}
+
+.faqss {
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.hero {
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.nav {
+  background-color: rgb(231, 197, 238);
+  margin: 5px;
+  padding: 2px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.mainNav {
+  margin-right: 40px;
+  padding: 2px;
+  color: blueviolet;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 3px;
+  margin-left: 40px;
+  font-size: 17px;
+}
+.mainNav:active {
+  color: blueviolet;
+}
+.mainNa {
+  margin-left: 45%;
+  padding: 2px;
+  color: blueviolet;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 3px;
+  margin-right: 45px;
+  text-align: right;
+  font-size: 16px;
+}
+.Logo {
+  width: 100px;
+  height: 30px;
+}
+
+#choose {
+  padding: 15px;
+  background-color: white;
+  box-sizing: border-box;
+  border: solid grey, 2px;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  width: 70%;
+  cursor: pointer;
+}
+
+#generate {
+  padding: 15px;
+  background-color: rgb(253, 198, 16);
+  box-sizing: border-box;
+  border: solid grey, 2px;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  width: 70%;
+  cursor: pointer;
+}
+.input {
+  max-width: 300px;
+  height: 150px;
+  padding: 25px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px dashed grey;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* input{
+    display:none
+} */
+
+.footer {
+  bottom: 0px;
+  display: flex;
+  box-sizing: border-box;
+  background-color: rgb(231, 197, 238);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.foot {
+  box-sizing: border-box;
+  width: 50%;
+}

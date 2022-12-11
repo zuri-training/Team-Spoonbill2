@@ -1,0 +1,83 @@
+section {
+  padding: 20em;
+  padding-bottom: 24em;
+}
+
+.contact {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  left: 377px;
+  top: 140px;
+  background: #F2F2F2;
+  box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.15);
+}
+
+.contact h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  width: 200px;
+  margin-left: 94px;
+}
+
+form label {
+  display: flex;
+  margin: 20px 0 4px 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+form ::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);    
+}
+
+form input {
+  width: 200%;
+  padding: 12px;
+  border: 1px solid #B67BE6;
+  border-radius: 4px;
+  background-color: #FFFFFFE5;
+}
+
+.submit {
+      width: 428px;
+      color: #F5F5F5;
+      font-size: 17px;
+      padding: 14px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 30px;
+      background-color: #9747FF;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+.contact p {
+  text-align: center;
+  color: #000000CC;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.contact a {
+  color: #FA8C02;
+}
