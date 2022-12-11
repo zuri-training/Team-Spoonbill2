@@ -14,7 +14,7 @@ app.use(express.json());
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
-// let sources='./Backend/Icons/images/part.png'
+let sources='./Backend/Icons/images/part.png';
 
 // try {
 //   const response = favicons(sources, icons.configuration);
@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === "development") {
 //     console.log(error.messages);
 // }
 
-// const faviconGen = favicons(sources, icons.configuration);
+const faviconGen = favicons(sources, icons.configuration);
 // faviconGen.then((response) => {
 //   console.log(response.html);
 //   // const data=response.images
