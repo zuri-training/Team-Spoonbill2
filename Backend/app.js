@@ -1,20 +1,68 @@
-const express = require('express');
-const globalErrorHandler= require('../Backend/controllers/errorController')
-const morgan = require('morgan');
-const userRouter =require('./routes/userRoutes')
+const express = require("express");
+const globalErrorHandler = require("../Backend/controllers/errorController");
+const morgan = require("morgan");
+const userRouter = require("./routes/userRoutes");
 const app = express();
-
+const { favicons } = require('favicons');
+const icons = require('./Icons/iconsFactory/iconsFactory');
+const fs = require('fs');
 
 // Body parser
 app.use(express.json());
 
 // Development loging
-if (process.env.NODE_ENV === 'development') {
-    app.use(morgan('dev'));
+if (process.env.NODE_ENV === "development") {
+  app.use(morgan("dev"));
 }
+// let sources='./Backend/Icons/images/part.png'
+
+// try {
+//   const response = favicons(sources, icons.configuration);
+//   console.log(response)
+//     console.log(response.images);
+//     console.log(response.files);
+//     console.log(response.html);
+// } catch (error) {
+//     console.log(error.messages);
+// }
+
+// const faviconGen = favicons(sources, icons.configuration);
+// faviconGen.then((response) => {
+//   console.log(response.html);
+//   // const data=response.images
+//   const html = response.html;
+//   fs.writeFile('./Backend/Icons/iconGen/index.html', html.map(el => el + '\n').join(''), (err) => {
+//     if (err) throw err;
+//     console.log('The file has been saved!');
+//   });
+  // function writeImage(response) {
+  //   // fs.mkdirSync('imageIcons');
+  //   response.images.forEach(image => {
+  //     fs.writeFile(`./Backend/Icons/iconGen/${image.name}`, image.contents, err => {
+  //       if (err) throw err;
+  //     });
+  //   });
+// }  // fs.writeFile('./Backend/Icons/iconGen/', data);
+  // console.log('File written');
+
+  // writeImage(response)
+  
+// ).catch((error) => {
+//   console.log(error.messages)
+// })
+// callback =function (error, response) {
+//   if (error) {
+//     console.log(error.message); // Error description e.g. "An unknown error has occurred"
+//     return;
+//   }
+//   console.log(response.images); // Array of { name: string, contents: <buffer> }
+//   console.log(response.files); // Array of { name: string, contents: <string> }
+//   console.log(response.html);
+// }
+//  favicons(sources, icons.configuration, callback);
 
 
 // Routes
-app.use('/api/users', userRouter);
+app.use("/api/users", userRouter);
 app.use(globalErrorHandler);
 module.exports = app;
