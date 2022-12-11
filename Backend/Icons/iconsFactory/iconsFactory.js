@@ -50,3 +50,15 @@ exports.configuration = {
 // } catch (error) {
 //     console.log(error.messages);
 // }
+
+
+// callback =function (error, response) {
+//   if (error) {
+//     console.log(error.message); // Error description e.g. "An unknown error has occurred"
+//     return;
+//   }
+//   console.log(response.images); // Array of { name: string, contents: <buffer> }
+//   console.log(response.files); // Array of { name: string, contents: <string> }
+//   console.log(response.html);
+// }
+//  favicons(sources, icons.configuration, callback);
