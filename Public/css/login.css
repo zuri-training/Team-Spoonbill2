@@ -7,7 +7,8 @@ section {
   position: absolute;
   width: 600px;
   height: 500px;
-  left: 377px;
+
+  left: 400px;
   top: 140px;
   background: #F2F2F2;
   box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.15);
@@ -80,4 +81,81 @@ form input {
 
 .contact a {
   color: #FA8C02;
+}
+
+.left label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+
+form label {
+  display: flex;
+  margin: 20px 0 4px 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+form ::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);    
+}
+
+form input {
+  width: 200%;
+  padding: 12px;
+  border: 1px solid #B67BE6;
+  border-radius: 4px;
+  background-color: #FFFFFFE5;
+}
+
+.submit {
+      width: 428px;
+      color: #F5F5F5;
+      font-size: 17px;
+      padding: 14px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 30px;
+      background-color: #9747FF;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+.contact p {
+  text-align: center;
+  color: #000000CC;
+  
+}
+
+.left input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -6px;
+  *overflow: hidden;
+}
+
+.right a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #000000CC;
+  position: relative;
+  right: -300px;
+  top: -27px;
+  text-decoration: none;
+
 }
