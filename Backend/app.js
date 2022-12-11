@@ -27,8 +27,8 @@ let sources='./Backend/Icons/images/part.png';
 // }
 
 const faviconGen = favicons(sources, icons.configuration);
-// faviconGen.then((response) => {
-//   console.log(response.html);
+faviconGen.then((response) => {
+  console.log(response.html);
 //   // const data=response.images
 //   const html = response.html;
 //   fs.writeFile('./Backend/Icons/iconGen/index.html', html.map(el => el + '\n').join(''), (err) => {
@@ -42,14 +42,14 @@ const faviconGen = favicons(sources, icons.configuration);
   //       if (err) throw err;
   //     });
   //   });
-// }  // fs.writeFile('./Backend/Icons/iconGen/', data);
+}  // fs.writeFile('./Backend/Icons/iconGen/', data);
   // console.log('File written');
 
   // writeImage(response)
   
-// ).catch((error) => {
-//   console.log(error.messages)
-// })
+).catch((error) => {
+  console.log(error.messages)
+})
 // callback =function (error, response) {
 //   if (error) {
 //     console.log(error.message); // Error description e.g. "An unknown error has occurred"
