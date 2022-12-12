@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{ 
+    background: #FAFAFA;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* navigation */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E7D4F7;
+    color: #fff;
+   
+}
+
+.logo{
+    margin-right: 2em;
+    margin-left: 2em;
+}
+.logo img{
+    width: 222.44;
+    height: 45px;
+    line-height: 45.36px;
+}
+
+nav{
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: #B3A1BE;
+    line-height: 30.24px;
+    margin-left: 0.5em;
+    letter-spacing: 0em;
+}
+
+a{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: #B3A1BE;
+    line-height: 30.24px;
+    margin-left: 1em;
+    letter-spacing: 0em;
+}
+
+a img{
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    padding-bottom: 0;
+}
+
+.menu1 {
+    padding: 2em 0.7em;
+}
+
+.menu2 {
+    padding: 0.8em;
+    padding-left: 3em;
+    margin-left: 3em;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 30px;
+    color: #3F3F3F;
+}
+
+.menu2 .different{
+    color: #000000;
+}
+a.active{
+    color:#9D54DE; 
+}
+
+.toggle-button{
+    position: absolute;
+    top: .70rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 90px;
+}
+
+.grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        column-gap: normal;
+}
+
+.one{
+    display: flex;
+    width: 90%;
+    margin: 20px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    height: 90%;
+    padding: 30px;
+}
+
+.flexbox1{
+    width: 50%;
+    height: 150px;
+    background: #D9D9D9;
+    border-radius: 16px;
+    margin: 20px;
+}
+
+.flexbox2{
+    width: 50%;
+    height: 150px;
+    background: none;
+    border-radius: 16px;
+    margin: 20px;
+}
+
+#btn1{
+width: 100%;
+height: 50px;
+background: #FFAD03;
+border: none;
+border-radius: 10px;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+padding: 7px 20px 10px 20px;
+line-height: 35px;
+color: rgba(255, 255, 255, 0.9);
+margin: 10px;
+}
+
+#btn2{
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 7px 10px 5px 5px;
+    line-height: 35px;
+    color: rgba(33, 33, 33, 0.9);
+    margin: 10px;
+    }
+
+    button img{
+        width: 25px;
+        height: 25px;
+    }
+
+
+/*.grid{
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'a b'
+    'a b'
+    'a b'
+    'a b'
+    'a b';
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+}
+
+.one{
+    grid-area: a;
+    background: red;
+}
+
+.two{
+    grid-area: b;
+    background: red;
+}
+*/
+
+.footer{
+    width: 100%;
+    padding: 30px 70px;
+    background: #E7D4F7;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 0.5rem;
+}
+
+.boxes {
+    width: 100%;
+    margin-left: 100px;
+    padding-left: 20px;
+}
+
+.boxes h3{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-left: 20px;
+   
+    }
+
+.boxes a{
+    display: block;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+}
+
+@media (max-width:450px) {
+
+    html{
+        font-size: 50%;
+        width: 100%;
+    }
+    header{
+        display: block;
+        padding: 10px;
+        height: 300px;
+        max-width: 100%;
+    }
+    .logo{
+        margin-right: 0em;
+    }
+    .logo img{
+       
+        height: 67px;
+        line-height: 15.36px;
+    }
+   
+    nav a{
+        display: block;
+        text-decoration: none;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        color: #B3A1BE;
+        line-height: 30.24px;
+        margin-left: 0.2em;
+        letter-spacing: 0em;
+    }
+
+    .menu2 {
+        display: box;
+        font-family: 'Outfit';
+        font-weight: 400;
+        font-size: 10px;
+        color: #3F3F3F;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .copybtn{
+        margin: auto;
+       
+    }
+    .copybtn a{
+        margin: auto;
+        font-size: 30px;
+    }
+    .box, .sectionTwo{
+        margin: auto;
+        padding: 0;
+    }
+
+    .footer{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+}
+
