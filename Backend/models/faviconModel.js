@@ -7,10 +7,10 @@ const faviconSchema = new mongoose.Schema({
     },
     html: {
         type: String,
-        required
+        required:true
     },
     user: {
-        type: mongoose.Schema.Types.ObjctId,
+        type: mongoose.Schema.Types.ObjectId,
         ref:'User'
     },
 });
