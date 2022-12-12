@@ -27,7 +27,7 @@
 }
 
 .nav {
-  background-color: rgb(231, 197, 238);
+  background-color: #cea7ee;
   margin: 5px;
   padding: 2px;
   box-sizing: border-box;
@@ -48,7 +48,7 @@
   color: blueviolet;
 }
 .mainNa {
-  margin-left: 45%;
+  margin-left: 35%;
   padding: 2px;
   color: blueviolet;
   cursor: pointer;
@@ -58,6 +58,18 @@
   margin-right: 45px;
   text-align: right;
   font-size: 16px;
+}
+
+.mainN{
+    padding: 2px;
+    color: blueviolet;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    font-size: 17px;
+    margin-top: 3px;
+    /* margin-left: 10%; */
 }
 .Logo {
   width: 100px;
@@ -78,7 +90,7 @@
 
 #generate {
   padding: 15px;
-  background-color: rgb(253, 198, 16);
+  background-color: #fa8c02;
   box-sizing: border-box;
   border: solid grey, 2px;
   border-radius: 5px;
@@ -109,7 +121,7 @@
   bottom: 0px;
   display: flex;
   box-sizing: border-box;
-  background-color: rgb(231, 197, 238);
+  background-color: #cea7ee;
   width: 100%;
   text-align: center;
   padding: 10px;
