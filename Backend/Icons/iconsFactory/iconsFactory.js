@@ -1,7 +1,3 @@
-
-
-// exports.source = '../images/part.png';
-
 exports.configuration = {
     path: '/Backend/Icons/iconGen/',
     appName: 'bilicon',
