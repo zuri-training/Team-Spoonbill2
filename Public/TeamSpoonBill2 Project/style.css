@@ -1,12 +1,14 @@
 * {
   box-sizing: border-box;
-  /* max-height: 100vh; */
+}
+body{
+  margin:0px;
 }
 .hero1 {
   display: flex;
   margin-left: 20%;
   box-sizing: border-box;
-  margin-top: 0px;
+  margin-top: 70px;
 }
 
 .bodyText {
@@ -29,27 +31,26 @@
 
 .nav {
   background-color: #E7D4F7;
-  margin: 5px;
   padding: 2px;
   box-sizing: border-box;
   width: 100%;
   margin-top: 0px;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .mainNav {
   margin-right: 40px;
   padding: 2px;
-  color: #9D54DE;
+  color: #B3A1BE;
   cursor: pointer;
   box-sizing: border-box;
   margin-top: 3px;
   margin-left: 40px;
-  font-family:outfit;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }
 .mainNav:active {
   color: #9D54DE;
@@ -57,26 +58,32 @@
 .mainNa {
   margin-left: 35%;
   padding: 2px;
-  color: #9D54DE;
+  color: #B3A1BE;
   cursor: pointer;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
   margin-top: 3px;
   margin-right: 45px;
   text-align: right;
-  font-size: 16px;
+  font-size: 18px;
 }
-
+.mainNa:active {
+  color: #9D54DE;
+}
 .mainN{
     padding: 2px;
-    color: #9D54DE;
+    color: #B3A1BE;
     cursor: pointer;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
     text-align: right;
     font-size: 17px;
     margin-top: 3px;
-    /* margin-left: 10%; */
+}
+.mainN:active {
+  color: #9D54DE;
 }
 .Logo {
   width: 100px;
@@ -89,7 +96,7 @@
   box-sizing: border-box;
   border: solid #212121 2px;
   border-radius: 5px;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 20px;
@@ -103,7 +110,7 @@
   box-sizing: border-box;
   border: solid grey, 2px;
   border-radius: 5px;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 20px;
@@ -115,7 +122,7 @@
   height: 150px;
   padding: 25px;
   display: flex;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 500;
   font-size: 16px;
   font-style: normal;
@@ -140,7 +147,7 @@
   text-align: center;
   padding: 10px;
   margin-bottom: 0px;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -148,7 +155,7 @@
 .foot {
   box-sizing: border-box;
   width: 50%;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
