@@ -2,14 +2,15 @@ const mongoose = require('mongoose');
 
 
 const zipSchema = new mongoose.Schema({
-    data: {
-        type: Buffer,
-        required: true,
-        user: {
+    favicon: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Favicon',
+    },
+    user: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User'
-        }
-    }
+        },
+    
 });
 
 const Zip = mongoose.model('Zip', zipSchema);
