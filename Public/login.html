@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="css/login.css" rel="stylesheet" type="text/css" />
-  </head>
-
-  <body>
+</head>
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/index.js" defer></script>
+<script src="https://kit.fontawesome.com/212fe58092.js" crossorigin="anonymous"></script>
+<body>
     <header>
-      <nav class="navbar">
-        <div class="logo">
-          <img
-            src="img/bilicom-low-resolution-color-logo 2.png"
-            alt="Bilicon"
-          />
-        </div>
-        <ul>
-          <li><a href="#home" class="active">Home </a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact us">Contact Us</a></li>
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">Login</a></li>
-        </ul>
-      </nav>
+        <div class="logo"><img src="img/bilicon-low-resolution-color-logo 2.png" alt="BILICON"></div>
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="menu1">
+                    <a href="index.html">Home</a>
+                    <a href="About us.html">About</a>
+                    <a href="Contact Us.html">Contact Us</a>
+            </div>
+            <div class="menu2">
+                <a href="signup.html" class="different">Sign Up</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
     </header>
-    <br />
-    <form action="convert Page">
-      <div class="container">
-        <h1>Login to your account</h1>
-        <label> E-mail </label>
-        <input
-          type="email"
-          placeholder="Enter email ID"
-          name="email"
-          required
-        />
-        <br />
-        <label>Password </label>
-        <input
-          type="password"
-          placeholder="Enter Password"
-          name="password"
-          required
-        />
-        <br />
-        <button type="submit">Login</button>
-        <br />
-        <input type="reset" value="clear" class="reset_button" />
-        <br />
-        <input type="checkbox" checked="checked" /> Remember me, Forgot<a
-          href="#"
-          style="color: #fa8c02"
-        >
-          password?
-        </a>
-        <div style="float: right">
-          Don't have an account?<a href="#" style="color: #fa8c02">Sign up</a>
+    <section>
+        <div class="contact">
+            <h1>Login to your account</h1>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" placeholder="Enter your password" required>
+                <input class="submit" type="submit" value="Login">
+                <div class="remember">
+                    <div class="left"><label><input type="checkbox" /> Remember me</label></div>
+                    <div class="right"><a href="#">Forgot password?</a></div>  
+                </div>
+            </form>
+            <p>Don't have an account?<a href="signup.html">Sign up</a></p>
         </div>
-      </div>
-    </form>
-  </body>
+    </section>
+    <footer>
+        <div class="foot">
+            <ul>
+                <li><b>Products</b></li>
+                <li><a href="#">Generate icon</a></li>
+                <li><a href="#">Download icons</a></li>
+                <li><a href="#">Refer and earn</a></li>
+                <li><a href="#">Frequently asked questions</a></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul >
+                <li><b>Developers</b></li>
+                <li><a href="#">Api Documentation</a></li>
+                <li><a href="#">Api reference</a></li>
+                <li><a href="#">Developer support</a></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul >
+                <li><b>Contact Us</b></li>
+                <li><a href="#" class="twitter">Twitter <i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" class="instagram">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
 </html>

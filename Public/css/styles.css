@@ -231,22 +231,22 @@ nav a {
 .box1-2 p {
     font-size: 40px;
     position: absolute;
-    left: 52%;
-    top: 190%;
+    left: 57%;
+    top: 173%;
 }
 
 .box1-3 p {
     font-size: 40px;
     position: absolute;
-    left: 55%;
-    top: 245.9%;
+    left: 59%;
+    top: 223%;
 }
 
 .box1-4 p {
     font-size: 40px;
     position: absolute;
-    left: 52%;
-    top: 301%;
+    left: 57%;
+    top: 272%;
 }
 
 .box1-1 h2 {
@@ -336,8 +336,8 @@ nav a {
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    right: 80%;
-    top: 377%;
+    right: 77%;
+    top: 340%;
 }
 
 .side1>img {
@@ -358,7 +358,7 @@ nav a {
     border-radius: 50%;
     position: absolute;
     right: 47%;
-    top: 377%;
+    top: 340%;
 }
 
 .side2>img {
@@ -378,8 +378,8 @@ nav a {
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    right: 13%;
-    top: 377%;
+    right: 16%;
+    top: 340%;
 }
 
 .side3>img {
@@ -399,8 +399,8 @@ nav a {
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    right: 80%;
-    top: 421%;
+    right: 77%;
+    top: 380%;
 }
 
 .side4>img {
@@ -421,7 +421,7 @@ nav a {
     border-radius: 50%;
     position: absolute;
     right: 47%;
-    top: 421%;
+    top: 380%;
 }
 
 .side5>img {
@@ -441,15 +441,15 @@ nav a {
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    right: 13%;
-    top: 421%;
+    right: 16%;
+    top: 380%;
 }
 
 .side6>img {
     width: 48px;
     height: 48px;
     position: absolute;
-    right: 30%;
+    right: 26%;
     top: 10%;
 }
 
