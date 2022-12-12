@@ -1,23 +1,81 @@
 const Favicon = require('../models/faviconModel');
 const favicons = require('favicons');
 const multer = require('multer');
+const path = require('path');
+const sharp = require('sharp');
 const icons =require('../Icons/iconsFactory/iconsFactory')
+const catchAsync = require('../utils/catchAsync');
+const AppError = require('../utils/appError');
+// const upload = multer({ dest: '../Icons/images' });
 
-const upload = multer({ dest: '/Backend/Icons/images/' });
-
-app.post('/upload', upload.single('image'), (req, res) => {
-    // Get the uploaded image file
-    const image = req.file;
-
-    // Generate favicons and related html
-    const faviconGen = favicons(image.path, icons.configuration);
-    faviconGen.then((response) => {
-        const html = response.html;
-        res.send(html);
-    }).catch((error)=>{
-        console.log(error.messages);
-    })
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null,'./Backend/Icons/images')
+    },
+    filename: (req, file, cb) => {
+        console.log(file)
+        cb(null, Date.now() + path.extname(file.originalname));
+    }
 })
+
+// const multerStorage = multer.memoryStorage();
+// const multerFilter = (req, file, cb) => {
+//     if (file.mimetype.startsWith('image')) {
+//         cb(null,true)
+//     } else {
+//         cb(new AppError(`Not an image! Please upload only images`,400),false)
+//     }
+// }
+
+
+const upload = multer({
+    storage: storage,
+    // fileFilter:multerFilter
+});
+
+exports.uploads = upload.single('image');
+
+// console.log(req.file.path);
+// exports.resizeImage = catchAsync(async (req, res, next) => {
+//     if (!req.file) return next();
+//     req.file.filename = Date.now() + path.extname(file.originalname);
+
+//     await sharp(req.file.buffer)
+//         .resize(500, 500)
+//         .toFormat('png')
+//         .png({ quality: 90 })
+//         .toFile(`Backend/Icons/images/${req.file.filename}`);
+//     next()
+// });
+
+
+// exports.uploads =( upload.single('image'), (req, res) => {
+//       // Get the uploaded image file
+//     //   const image = req.file;
+//     console.log("Success");
+//       // Generate favicons and related html
+//     // const faviconGen = favicons(image, icons.configuration);
+//     // faviconGen.then((response) => {
+//     //     const html = response.html;
+//     //     res.send(html);
+//     // }).catch((error) => {
+//     //     console.log(error.messages);
+//     // });
+// });
+
+// app.post('/upload', upload.single('image'), (req, res) => {
+//     // Get the uploaded image file
+//     const image = req.file;
+
+//     // Generate favicons and related html
+//     const faviconGen = favicons(image.path, icons.configuration);
+//     faviconGen.then((response) => {
+//         const html = response.html;
+//         res.send(html);
+//     }).catch((error)=>{
+//         console.log(error.messages);
+//     })
+// })
 
 
 // const faviconGen = favicons(sources, icons.configuration);
