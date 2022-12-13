@@ -67,6 +67,44 @@ exports.login = catchAsync(async (req, res, next) => {
 });
 
 
+exports.protect = catchAsync(async(req, res, next) => {
+
+  // 1) Getting token and check if its there
+  let token;
+  if (
+      req.headers.authorization &&
+      req.headers.authorization.startsWith('Bearer')
+  ) {
+
+      token = req.headers.authorization.split(' ')[1];
+  } else if (req.cookies.jwt) {
+      token = req.cookies.jwt;
+  }
+
+  if (!token) {
+      return next(new AppError('You are not  logged in! Please login to get access', 401))
+  }
+  // 2) Verification token
+  const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
+
+  // 3) Check if user exists
+  const currentUser = await User.findById(decoded.id);
+  if (!currentUser) {
+      return next(new AppError('User no longer exists', 401))
+  }
+  // 4)Check if user changed password after token was ued
+  if (currentUser.changedPasswordAfter(decoded.iat)) {
+      return next(new AppError('User recently changed pasword! Please log in', 401))
+  }
+
+  // GRANT ACCESS PROTECTED ROUTE
+  req.user = currentUser;
+  res.locals.user = currentUser;
+  next();
+});
+
+
+
 exports.logout = (req, res) => {
   res.cookie('jwt', 'loggedout', {
       expires: new Date(Date.now() + 10 * 1000),
