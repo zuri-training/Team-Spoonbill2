@@ -5,6 +5,7 @@
 
 * {
   box-sizing: border-box;
+
   font-family: Outfit;
   /* max-height: 100vh; */
 }
@@ -12,7 +13,7 @@
   display: flex;
   margin-left: 20%;
   box-sizing: border-box;
-  margin-top: 5em;
+  margin-top: 70px;
 }
 
 .bodyText {
@@ -35,14 +36,13 @@
 
 .nav {
   background-color: #E7D4F7;
-  margin: 5px;
   padding: 2px;
   box-sizing: border-box;
   width: 100%;
   margin-top: 0px;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .mainNav {
@@ -53,6 +53,7 @@
   box-sizing: border-box;
   margin-top: 3px;
   margin-left: 40px;
+
   font-family:outfit;
   font-weight: 400;
   font-size: 21px;
@@ -71,23 +72,29 @@
   color: #B3A1BE;
   cursor: pointer;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
   margin-top: 3px;
   margin-right: 45px;
   text-align: right;
-  font-size: 16px;
+  font-size: 18px;
 }
-
+.mainNa:active {
+  color: #9D54DE;
+}
 .mainN{
     padding: 2px;
     color: #B3A1BE;
     cursor: pointer;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
     text-align: right;
     font-size: 17px;
     margin-top: 3px;
-    /* margin-left: 10%; */
+}
+.mainN:active {
+  color: #9D54DE;
 }
 .Logo {
   width: 322.44;
@@ -101,7 +108,7 @@
   box-sizing: border-box;
   border: solid #212121 2px;
   border-radius: 5px;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 20px;
@@ -115,7 +122,7 @@
   box-sizing: border-box;
   border: solid grey, 2px;
   border-radius: 5px;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 20px;
@@ -128,7 +135,7 @@
   background-color: #FFFFFF;
   padding: 25px;
   display: flex;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 500;
   font-size: 16px;
   font-style: normal;
@@ -153,7 +160,7 @@
   text-align: center;
   padding: 10px;
   margin-bottom: 0px;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -161,7 +168,7 @@
 .foot {
   box-sizing: border-box;
   width: 50%;
-  font-family:outfit;
+  font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
