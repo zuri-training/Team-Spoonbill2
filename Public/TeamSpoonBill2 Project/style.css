@@ -1,12 +1,18 @@
+@font-face {
+  font-family: Outfit;
+  src: url(Outfit-Regular.ttf);
+}
+
 * {
   box-sizing: border-box;
+  font-family: Outfit;
   /* max-height: 100vh; */
 }
 .hero1 {
   display: flex;
   margin-left: 20%;
   box-sizing: border-box;
-  margin-top: 0px;
+  margin-top: 5em;
 }
 
 .bodyText {
@@ -42,14 +48,14 @@
 .mainNav {
   margin-right: 40px;
   padding: 2px;
-  color: #9D54DE;
+  color: #B3A1BE;
   cursor: pointer;
   box-sizing: border-box;
   margin-top: 3px;
   margin-left: 40px;
   font-family:outfit;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 21px;
 }
 .mainNav:active {
   color: #9D54DE;
@@ -57,7 +63,7 @@
 .mainNa {
   margin-left: 35%;
   padding: 2px;
-  color: #9D54DE;
+  color: #B3A1BE;
   cursor: pointer;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
@@ -69,7 +75,7 @@
 
 .mainN{
     padding: 2px;
-    color: #9D54DE;
+    color: #B3A1BE;
     cursor: pointer;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
@@ -79,8 +85,9 @@
     /* margin-left: 10%; */
 }
 .Logo {
-  width: 100px;
-  height: 30px;
+  width: 322.44;
+  height: 36px;
+  line-height: 45.36px;
 }
 
 #choose {
