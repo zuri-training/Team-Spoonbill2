@@ -20,12 +20,12 @@ exports.configuration = {
     manifestMaskable: false,
     
     icons: {
-        android: true,
-        appleIcon: true,
-        appleStartup: true,
+        android: false,
+        appleIcon: false,
+        appleStartup: false,
         favicons: true,
-        windows: true,
-        yandex: true,
+        windows: false,
+        yandex: false,
     },
     shortcuts: [
         {
