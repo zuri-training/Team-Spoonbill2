@@ -67,6 +67,15 @@ exports.login = catchAsync(async (req, res, next) => {
 });
 
 
+exports.logout = (req, res) => {
+  res.cookie('jwt', 'loggedout', {
+      expires: new Date(Date.now() + 10 * 1000),
+      httpOnly: true
+  });
+  res.status(200).json({ status: 'success' });
+}
+
+
 exports.forgotPassword = catchAsync(async(req, res, next) => {
     // 1) Get user based on posted email
     const user = await User.findOne({ email: req.body.email })
