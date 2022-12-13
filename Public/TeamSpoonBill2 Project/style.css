@@ -6,6 +6,7 @@
   display: flex;
   margin-left: 20%;
   box-sizing: border-box;
+  margin-top: 0px;
 }
 
 .bodyText {
@@ -32,25 +33,31 @@
   padding: 2px;
   box-sizing: border-box;
   width: 100%;
+  margin-top: 0px;
+  font-family:outfit;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .mainNav {
   margin-right: 40px;
   padding: 2px;
-  color: blueviolet;
+  color: #9D54DE;
   cursor: pointer;
   box-sizing: border-box;
   margin-top: 3px;
   margin-left: 40px;
-  font-size: 17px;
+  font-family:outfit;
+  font-weight: 400;
+  font-size: 16px;
 }
 .mainNav:active {
-  color: blueviolet;
+  color: #9D54DE;
 }
 .mainNa {
   margin-left: 35%;
   padding: 2px;
-  color: blueviolet;
+  color: #9D54DE;
   cursor: pointer;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
@@ -62,7 +69,7 @@
 
 .mainN{
     padding: 2px;
-    color: blueviolet;
+    color: #9D54DE;
     cursor: pointer;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
@@ -78,11 +85,13 @@
 
 #choose {
   padding: 15px;
-  background-color: white;
+  background-color: #F9F9F9;
   box-sizing: border-box;
-  border: solid grey, 2px;
+  border: solid #212121 2px;
   border-radius: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:outfit;
+  font-weight: 400;
+  font-size: 16px;
   margin-bottom: 20px;
   width: 70%;
   cursor: pointer;
@@ -90,11 +99,13 @@
 
 #generate {
   padding: 15px;
-  background-color: #fa8c02;
+  background-color: #FFAD03;
   box-sizing: border-box;
   border: solid grey, 2px;
   border-radius: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:outfit;
+  font-weight: 400;
+  font-size: 16px;
   margin-bottom: 20px;
   width: 70%;
   cursor: pointer;
@@ -104,7 +115,10 @@
   height: 150px;
   padding: 25px;
   display: flex;
-  font-size: 20px;
+  font-family:outfit;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -121,13 +135,20 @@
   bottom: 0px;
   display: flex;
   box-sizing: border-box;
-  background-color: #cea7ee;
+  background-color: #E7D4F7;
   width: 100%;
   text-align: center;
   padding: 10px;
+  margin-bottom: 0px;
+  font-family:outfit;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .foot {
   box-sizing: border-box;
   width: 50%;
+  font-family:outfit;
+  font-weight: 400;
+  font-size: 16px;
 }
