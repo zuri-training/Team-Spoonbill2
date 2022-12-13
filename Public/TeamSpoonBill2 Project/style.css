@@ -57,7 +57,12 @@
   font-weight: 400;
   font-size: 21px;
 }
-.mainNav:active {
+
+.mainNav a {
+  color: #B3A1BE;
+}
+
+.mainNav a.active {
   color: #9D54DE;
 }
 .mainNa {
@@ -118,8 +123,9 @@
   cursor: pointer;
 }
 .input {
-  max-width: 300px;
-  height: 150px;
+  width: 477px;
+  height: 312px;
+  background-color: #FFFFFF;
   padding: 25px;
   display: flex;
   font-family:outfit;
