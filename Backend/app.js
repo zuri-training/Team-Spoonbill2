@@ -14,7 +14,7 @@ app.use(express.json());
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
-// let sources='./Backend/Icons/images/part.png';
+let sources='./Backend/Icons/images/part.png';
 
 // try {
 //   const response = favicons(sources, icons.configuration);
@@ -26,33 +26,33 @@ if (process.env.NODE_ENV === "development") {
 //     console.log(error.messages);
 // }
 
-// const faviconGen = favicons(sources, icons.configuration);
-// faviconGen.then((response) => {
-//   console.log(response.html[0]);
-//   console.log(response.images[0]);
-//   // const data=response.images
-//   // const html = response.html;
-//   // fs.writeFile('./Backend/Icons/iconGen/icon.html', html.map(el => el + '\n').join(''), (err) => {
-//   //   if (err) throw err;
-//   //   console.log('The file has been saved!');
-//   // });
+const faviconGen = favicons(sources, icons.configuration);
+faviconGen.then((response) => {
+  console.log(response.html[0]);
+  console.log(response.images[0]);
+  // const data=response.images
+  const html = response.html;
+  fs.writeFile('./Backend/Icons/iconGen/icon.html', html.map(el => el + '\n').join(''), (err) => {
+    if (err) throw err;
+    console.log('The file has been saved!');
+  });
 
-//   function writeImage(response) {
-//     // fs.mkdirSync('imageIcons');
-//     response.images.forEach(image => {
-//       fs.writeFile(`./Backend/Icons/iconGen/${image.name}`, image.contents, err => {
-//         if (err) throw err;
-//       });
-//     });
+  function writeImage(response) {
+    // fs.mkdirSync('imageIcons');
+    response.images.forEach(image => {
+      fs.writeFile(`./Backend/Icons/iconGen/${image.name}`, image.contents, err => {
+        if (err) throw err;
+      });
+    });
 
-//   };  // fs.writeFile('./Backend/Icons/iconGen/', data);
-//   // console.log('File written');
+  };  // fs.writeFile('./Backend/Icons/iconGen/', data);
+  // console.log('File written');
 
-//   // writeImage(response);
+  writeImage(response);
 
-// }).catch((error) => {
-//   console.log(error.messages)
-// })
+}).catch((error) => {
+  console.log(error.messages)
+})
 
 
 

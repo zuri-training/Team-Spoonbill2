@@ -35,6 +35,7 @@ const upload = multer({
 
 exports.uploads = upload.single('image');
 
+
 // console.log(req.file.path);
 // exports.resizeImage = catchAsync(async (req, res, next) => {
 //     if (!req.file) return next();
@@ -105,3 +106,44 @@ exports.uploads = upload.single('image');
 // }).catch((error) => {
 //   console.log(error.messages)
 // })
+
+// function generate(source, config) {
+//     const faviconGen = favicons(source, config);
+//       faviconGen.then((response) => {
+//         const html = response.html;
+//         res.send(html);
+//     }).catch((error) => {
+//         console.log(error.messages);
+//     });
+// }
+
+exports.generateFavicon = catchAsync(async (req, res) => {
+    const image = req.file;
+    console.log(image.path);
+    const source= 'Backend\Icons\images\image_1670919931424.png'
+    // generate(image.path, icons.configuration);
+   
+    // Generate favicons and related html
+    const faviconGen = await favicons(source, icons.configuration);
+    faviconGen.then((response) => {
+        const html = response.html;
+        res.send(html);
+    }).catch((error) => {
+        console.log(error.messages);
+    });
+
+//    await favicons(image.path,icons.configuration, (err, response) => {
+//         if (err) {
+//           // Handle error
+//             console.log(err.message)
+//         } else {
+//           // Get the generated HTML
+//           const html = response.html;
+    
+//           // Send the HTML back to the client
+//           res.send(html);
+//         }
+//       });
+
+})
+    

@@ -5,5 +5,5 @@ const router = express.Router();
 
 router.post('/signup', authController.signup);
 router.post('/login', authController.login);
-router.post('/uploads', faviconController.uploads, /*faviconController.resizeImage*/);
+router.post('/uploads', faviconController.uploads, faviconController.generateFavicon);
 module.exports = router;
