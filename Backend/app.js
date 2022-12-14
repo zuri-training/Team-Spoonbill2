@@ -6,9 +6,15 @@ const app = express();
 const { favicons } = require('favicons');
 const icons = require('./Icons/iconsFactory/iconsFactory');
 const fs = require('fs');
+const cors = require('cors');
+
 
 // Body parser
 app.use(express.json());
+
+app.use(cors({
+  origin: "*",
+}));
 
 // Development loging
 if (process.env.NODE_ENV === "development") {
@@ -54,7 +60,9 @@ faviconGen.then((response) => {
   console.log(error.messages)
 })
 
-
+app.use((req, res) => {
+  res.send('Hellooo')
+})
 
 // Routes
 app.use("/api/users", userRouter);
