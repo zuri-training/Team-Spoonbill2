@@ -6,12 +6,13 @@ const sharp = require('sharp');
 const icons =require('../Icons/iconsFactory/iconsFactory')
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
-const AdmZip= require("adm-zip")
+const AdmZip = require("adm-zip");
+const fs = require('fs');
 // const upload = multer({ dest: '../Icons/images' });
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null,'./Backend/Icons/images')
+        cb(null,'./Backend/Icons/iconGen')
     },
     filename: (req, file, cb) => {
         console.log(file)
@@ -126,9 +127,27 @@ exports.generateFavicon = catchAsync(async (req, res) => {
    
     // Generate favicons and related html
      await favicons.favicons(image.path, icons.configuration).then((response) => {
-        const html = response.html[0];
-         const images = response.images[0];
-            const alldata=[html,images]
+        const html = response.html;
+         const images = response.images;
+         const alldata = [html, images]
+         
+         fs.writeFile('./Backend/Icons/iconGen/icon.html', html.map(el => el + '\n').join(''), (err) => {
+            if (err) throw err;
+            console.log('The file has been saved!');
+          });
+        
+          function writeImage(response) {
+            // fs.mkdirSync('imageIcons');
+            response.images.forEach(image => {
+              fs.writeFile(`./Backend/Icons/iconGen/${image.name}`, image.contents, err => {
+                if (err) throw err;
+              });
+            });
+        
+          }; 
+                
+          writeImage(response);
+
 
          const zip = new AdmZip();
          if (req.files) {
@@ -179,10 +198,10 @@ exports.generateFavicon = catchAsync(async (req, res) => {
 //       });
 
 })
-var dir ="public";
-var subDirectory = "public/uploads";
-if (!fs.existSync(dir)) {
-    fs.mkdirSync(dir);
-    fs.mkdirSync(subDirectory);
-}
+// var dir ="public";
+// var subDirectory = "public/uploads";
+// if (!fs.existsSync(dir)) {
+//     fs.mkdirSync(dir);
+//     fs.mkdirSync(subDirectory);
+// }
     

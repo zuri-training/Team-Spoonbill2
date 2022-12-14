@@ -37,16 +37,16 @@ faviconGen.then((response) => {
   //   console.log('The file has been saved!');
   // });
 
-  function writeImage(response) {
-    // fs.mkdirSync('imageIcons');
-    response.images.forEach(image => {
-      fs.writeFile(`./Backend/Icons/iconGen/${image.name}`, image.contents, err => {
-        if (err) throw err;
-      });
-    });
+  // function writeImage(response) {
+  //   // fs.mkdirSync('imageIcons');
+  //   response.images.forEach(image => {
+  //     fs.writeFile(`./Backend/Icons/iconGen/${image.name}`, image.contents, err => {
+  //       if (err) throw err;
+  //     });
+  //   });
 
-  };  // fs.writeFile('./Backend/Icons/iconGen/', data);
-  // console.log('File written');
+  // }; 
+  
 
   // writeImage(response);
 
