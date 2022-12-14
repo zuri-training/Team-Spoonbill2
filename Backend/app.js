@@ -7,6 +7,50 @@ const { favicons } = require('favicons');
 const icons = require('./Icons/iconsFactory/iconsFactory');
 const fs = require('fs');
 const cors = require('cors');
+const path = require('path');
+const router =express.Router()
+
+
+app.set('view engine', 'ejs');
+// app.set('views', path.join(__dirname, 'Backend/views'))
+
+// 1) GLOBAL MIDDLEWARES
+
+// Serving static files
+// app.use(express.static(path.join(__dirname, 'Backend')))
+
+
+
+// load assets
+app.use('/css', express.static(path.resolve(__dirname, "Public/css")));
+app.use('/img', express.static(path.resolve(__dirname, "Public/img")));
+app.use('/js', express.static(path.resolve(__dirname, "Public/js")));
+
+
+
+router.get('/',function(req,res){
+ res.render('Backend/views/index');
+  //__dirname : It will resolve to your project folder.
+});
+
+// router.get('/about',function(req,res){
+//   res.sendFile(path.join(__dirname+'/Public/About Us.html'));
+// });
+
+// router.get('/contact',function(req,res){
+//   res.sendFile(path.join(__dirname+'/Public/Contact Us.html'));
+// });
+
+// router.get('/login',function(req,res){
+//   res.sendFile(path.join(__dirname+'/Public/login.html'));
+// });
+
+// router.get('/signup',function(req,res){
+//   res.sendFile(path.join(__dirname+'/Public/signup.html'));
+// });
+
+//add the router
+// app.use('/', router);
 
 
 // Body parser
@@ -20,7 +64,10 @@ app.use(cors({
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
-let sources='./Backend/Icons/images/part.png';
+
+
+
+
 
 // try {
 //   const response = favicons(sources, icons.configuration);
@@ -60,9 +107,7 @@ let sources='./Backend/Icons/images/part.png';
 //   console.log(error.messages)
 // })
 
-app.use((req, res) => {
-  res.send('Hellooo')
-})
+
 
 // Routes
 app.use("/api/users", userRouter);
