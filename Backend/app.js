@@ -32,12 +32,12 @@ let sources='./Backend/Icons/images/part.png';
 //     console.log(error.messages);
 // }
 
-const faviconGen = favicons(sources, icons.configuration);
-faviconGen.then((response) => {
-  console.log(response.html[0]);
-  console.log(response.images[0]);
-  // const data=response.images
-  const html = response.html;
+// const faviconGen = favicons(sources, icons.configuration);
+// faviconGen.then((response) => {
+//   console.log(response.html[0]);
+//   console.log(response.images[0]);
+//   // const data=response.images
+//   const html = response.html;
   // fs.writeFile('./Backend/Icons/iconGen/icon.html', html.map(el => el + '\n').join(''), (err) => {
   //   if (err) throw err;
   //   console.log('The file has been saved!');
@@ -56,9 +56,9 @@ faviconGen.then((response) => {
 
   // writeImage(response);
 
-}).catch((error) => {
-  console.log(error.messages)
-})
+// }).catch((error) => {
+//   console.log(error.messages)
+// })
 
 app.use((req, res) => {
   res.send('Hellooo')
