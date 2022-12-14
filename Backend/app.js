@@ -8,10 +8,10 @@ const icons = require('./Icons/iconsFactory/iconsFactory');
 const fs = require('fs');
 const cors = require('cors');
 const path = require('path');
-const router =express.Router()
+// const router =express.Router()
 
 
-app.set('view engine', 'ejs');
+// app.set('view engine', 'ejs');
 // app.set('views', path.join(__dirname, 'Backend/views'))
 
 // 1) GLOBAL MIDDLEWARES
@@ -22,16 +22,16 @@ app.set('view engine', 'ejs');
 
 
 // load assets
-app.use('/css', express.static(path.resolve(__dirname, "Public/css")));
-app.use('/img', express.static(path.resolve(__dirname, "Public/img")));
-app.use('/js', express.static(path.resolve(__dirname, "Public/js")));
+// app.use('/css', express.static(path.resolve(__dirname, "Public/css")));
+// app.use('/img', express.static(path.resolve(__dirname, "Public/img")));
+// app.use('/js', express.static(path.resolve(__dirname, "Public/js")));
 
 
 
-router.get('/',function(req,res){
- res.render('Backend/views/index');
+// router.get('/',function(req,res){
+//  res.render('Backend/views/index');
   //__dirname : It will resolve to your project folder.
-});
+// });
 
 // router.get('/about',function(req,res){
 //   res.sendFile(path.join(__dirname+'/Public/About Us.html'));
