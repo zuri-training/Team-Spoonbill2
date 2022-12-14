@@ -6,6 +6,7 @@ const sharp = require('sharp');
 const icons =require('../Icons/iconsFactory/iconsFactory')
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
+const AdmZip= require("adm-zip")
 // const upload = multer({ dest: '../Icons/images' });
 
 const storage = multer.diskStorage({
@@ -120,30 +121,68 @@ exports.uploads = upload.single('image');
 exports.generateFavicon = catchAsync(async (req, res) => {
     const image = req.file;
     console.log(image.path);
-    const source= 'Backend\Icons\images\image_1670919931424.png'
+    // const source= 'Backend\Icons\images\image_1670919931424.png'
     // generate(image.path, icons.configuration);
    
     // Generate favicons and related html
-    const faviconGen = await favicons(source, icons.configuration);
-    faviconGen.then((response) => {
-        const html = response.html;
-        res.send(html);
+     await favicons.favicons(image.path, icons.configuration).then((response) => {
+        const html = response.html[0];
+         const images = response.images[0];
+            const alldata=[html,images]
+
+         const zip = new AdmZip();
+         if (req.files) {
+             req.files.forEach(file => {
+                 console.log(file.path);
+                 zip.addLocalFile(file.path)
+             });
+             const outputPath=Date.now()+ "output.zip";
+             fs.writeFileSync(outputPath, zip.toBuffer());
+
+             res.download(outputPath, (err) => {
+                 if (err) {
+                     req.files.forEach(file => {
+                         fs.unlinkSync(file.path);
+                     });
+                     fs.unlinkSync(output.path);
+                     res.send("Error in donwnloading zip files");
+                 }
+                 req.files.forEach(file => {
+                     fs.unlinkSync(file.path)
+                 });
+                 fs.unlinkSync(output.path)
+             });
+             
+         }
+        res.status(200).json({
+            status:'success',
+            data: {
+                alldata
+            }
+        })
+
     }).catch((error) => {
         console.log(error.messages);
     });
 
-//    await favicons(image.path,icons.configuration, (err, response) => {
+//    await favicons.favicons(image.path,icons.configuration, (err, response) => {
 //         if (err) {
 //           // Handle error
 //             console.log(err.message)
 //         } else {
 //           // Get the generated HTML
 //           const html = response.html;
-    
+//             console.log(response.html);
 //           // Send the HTML back to the client
 //           res.send(html);
 //         }
 //       });
 
 })
+var dir ="public";
+var subDirectory = "public/uploads";
+if (!fs.existSync(dir)) {
+    fs.mkdirSync(dir);
+    fs.mkdirSync(subDirectory);
+}
     
