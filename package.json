@@ -17,6 +17,7 @@
     },
     "homepage": "https://github.com/Ivandamien/Team-Spoonbill2#readme",
     "dependencies": {
+        "adm-zip": "^0.5.9",
         "axios": "^1.2.1",
         "bcrypt": "^5.1.0",
         "cookie-parser": "^1.4.6",

@@ -32,10 +32,10 @@ faviconGen.then((response) => {
   console.log(response.images[0]);
   // const data=response.images
   const html = response.html;
-  fs.writeFile('./Backend/Icons/iconGen/icon.html', html.map(el => el + '\n').join(''), (err) => {
-    if (err) throw err;
-    console.log('The file has been saved!');
-  });
+  // fs.writeFile('./Backend/Icons/iconGen/icon.html', html.map(el => el + '\n').join(''), (err) => {
+  //   if (err) throw err;
+  //   console.log('The file has been saved!');
+  // });
 
   function writeImage(response) {
     // fs.mkdirSync('imageIcons');
@@ -48,7 +48,7 @@ faviconGen.then((response) => {
   };  // fs.writeFile('./Backend/Icons/iconGen/', data);
   // console.log('File written');
 
-  writeImage(response);
+  // writeImage(response);
 
 }).catch((error) => {
   console.log(error.messages)
