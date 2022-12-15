@@ -4,7 +4,9 @@
     "description": "favicon generator",
     "main": "index.js",
     "scripts": {
-        "start": "node server.js"
+        "start": "node server.js",
+        "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+        "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
     },
     "repository": {
         "type": "git",
@@ -33,7 +35,9 @@
         "morgan": "^1.10.0",
         "multer": "^1.4.5-lts.1",
         "nodemailer": "^6.8.0",
+        "parcel-bundler": "^1.12.5",
         "path": "^0.12.7",
+        "pug": "^3.0.2",
         "sharp": "^0.31.2",
         "validator": "^13.7.0"
     }
