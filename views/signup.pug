@@ -1,0 +1,166 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Signup
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Big+Shoulders+Display\
+  &family=Inter&family=Lexend+Deca&family=Outfit&display=swap' rel='stylesheet')
+  //- script(src='js/index.js' defer='')
+
+  
+  link(rel='stylesheet' href='css/login.css')
+  link(rel='stylesheet' href='css/styles.css')
+  script(src='https://kit.fontawesome.com/212fe58092.js' crossorigin='anonymous')
+//- NAV BAR
+header
+  .logo
+    img(src='img/bilicon-low-resolution-color-logo 2.png' alt='BILICON')
+  nav.navbar
+    a.toggle-button(href='#')
+      span.bar
+      span.bar
+      span.bar
+    .menu1
+      a(href='/') Home
+      a(href='/about') About
+      a(href='/contact') Contact Us
+    .menu2
+      a.different(href='/signup') Sign Up
+      a(href='/login') Login
+//
+  <header>
+  <div class="container navbar">
+  <div class="right-side">
+  <div class="logo">
+  <img src="https://i.postimg.cc/cJk1MjRc/bilicon-low-resolution-color-logo-2.png" alt="">
+  </div>
+  <div>
+  <nav>
+  <ul>
+  <a href="index.html">
+  <li class="home-link">Home</li>
+  </a>
+  <a href="About us.html">
+  <li>About</li>
+  </a>
+  <a href="Contact Us.html">
+  <li>Contact Us</li>
+  </a>
+  </ul>
+  </nav>
+  </div>
+  </div>
+  <div class="left-side">
+  <a href="signup.html" target="_parent" rel="noopener noreferrer"><button class="signup-btn">Signup</button></a>
+  <a href="login.html" target="_parent" rel="noopener noreferrer"><button class="login-btn">Login</button></a>
+  </div>
+  </div>
+  </header>
+//
+  <section class="showcase">
+  <div class="container signup-form">
+  <div>
+  <h2 class="form-header">Create a free account</h2>
+  </div>
+  <form class="form-signup" action="" method="post">
+  <div>
+  <div class="user-info">
+  <label class="input-label" for="name">Name</label>
+  <br>
+  <input type="text" placeholder="john Doe" name="name" id="name" required>
+  </div>
+  <div class="user-info">
+  <label class="input-label" for="user-email">Email</label>
+  <br>
+  <input type="email" placeholder="example@gmail.com" name="Email" id="email" required>
+  </div>
+  <div class="user-info">
+  <label for="user-password">Password</label>
+  <br>
+  <input type="password" placeholder="Enter your password" name="password1" id="password" required>
+  </div>
+  <div class="user-info">
+  <label for="user-passowrd">Reapeat passowrd</label>
+  <br>
+  <input type="password" placeholder="Repeat password" name="passwordC" id="passwordConfirm">
+  </div>
+  <div class="questions">
+  <div>
+  <input type="checkbox" name="" id="user-option">
+  <label class="user-option-text" for="user-option">Remember me</label>
+  </div>
+  <div>
+  <p class="account-availability">Already have an account? <a class="signin-link" href="login.html" target="_parent" rel="noopener noreferrer">Sign in</a></p>
+  </div>
+  </div>
+  <div class="submit-button-div">
+  <button class="submit-button" type="submit">Sign up</button>
+  </div>
+  </div>
+  </form>
+  <div class="user-option">
+  <p class="user-option-text">Sign in with <a class="google-link" href="#" target="_parent" rel="noopener noreferrer">Google</a>
+  </p>
+  </div>
+  </div>
+  </section>
+section
+  .contact
+    h1 Create a new account
+    form.form-signup(method='post')
+      label(for='name') Name
+      input#name(type='text' placeholder='John Doe' required='')
+      label(for='email') Email
+      input#email(type='email' placeholder='example@gmail.com' required='')
+      label(for='password') Password
+      input#password(type='password' placeholder='************' required='')
+      label(for='passwordConfirm') PasswordConfirm
+      input#passwordConfirm(type='password' placeholder='***********' required='')
+      input.submit(type='submit' value='Signup')
+    p
+      | Already have an account?
+      a(href='login.html') Login
+footer
+  .foot
+    ul
+      li
+        b Products
+      li
+        a(href='#') Generate icon
+      li
+        a(href='#') Download icons
+      li
+        a(href='#') Refer and earn
+      li
+        a(href='#') Frequently asked questions
+  .foot
+    ul
+      li
+        b Developers
+      li
+        a(href='#') Api Documentation
+      li
+        a(href='#') Api reference
+      li
+        a(href='#') Developer support
+  .foot
+    ul
+      li
+        b Contact Us
+      li
+        a.twitter(href='#')
+          | Twitter 
+          i.fa-brands.fa-twitter
+      li
+        a.instagram(href='#')
+          | Instagram 
+          i.fa-brands.fa-instagram
+      li
+        a(href='#') Privacy Policy
+      li
+        a(href='#') Terms of use
+script(src='/js/bundle.js')
+

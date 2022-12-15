@@ -8,16 +8,30 @@ const icons = require('./Icons/iconsFactory/iconsFactory');
 const fs = require('fs');
 const cors = require('cors');
 const path = require('path');
+const viewRouter= require('./routes/viewRoutes')
 // const router =express.Router()
+const AppError = require('../Backend/utils/appError')
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Controll-Allow-Origin",
+    "Origin,X-Requsted-With,Content-Type,Accept,Authorization"
+  );
+  if (req.method === "OPTIONS") {
+    res.header("Access-Control-Allow-Methods", "PUT,POST,PATCH,DELETE,GET");
+    return res.status(200).json({});
+  }
+  next();
+})
 
-// app.set('view engine', 'ejs');
-// app.set('views', path.join(__dirname, 'Backend/views'))
+app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, '../views'));
 
 // 1) GLOBAL MIDDLEWARES
 
 // Serving static files
-// app.use(express.static(path.join(__dirname, 'Backend')))
+app.use(express.static(path.join(__dirname, '../Public')));
 
 
 
@@ -40,6 +54,7 @@ const path = require('path');
 // router.get('/contact',function(req,res){
 //   res.sendFile(path.join(__dirname+'/Public/Contact Us.html'));
 // });
+
 
 // router.get('/login',function(req,res){
 //   res.sendFile(path.join(__dirname+'/Public/login.html'));
@@ -110,6 +125,22 @@ if (process.env.NODE_ENV === "development") {
 
 
 // Routes
+app.use('/', viewRouter);
 app.use("/api/users", userRouter);
+
+
+
+// app.all('*', (req, res, next) => {
+//   // res.status(404).json({
+//   //     status: 'fail',
+//   //     message: `Can't find ${req.originalUrl} on this server`
+
+//   // })
+//   // const err = new Error(`Can't find ${req.originalUrl} on this server`);
+//   // err.status = 'fail';
+//   // err.statusCode = 404;
+
+//   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
+// })
 app.use(globalErrorHandler);
 module.exports = app;

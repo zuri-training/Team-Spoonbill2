@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display
     &family=Inter&family=Lexend+Deca&family=Outfit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/signup.css">
+    <!-- <script type="module" src="js/index.js" defer></script> -->
+    <!-- <link rel="stylesheet" href="css/signup.css"> -->
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/212fe58092.js" crossorigin="anonymous"></script>
 </head>
@@ -18,6 +20,25 @@
 <body>
     <!--NAVBAR-->
     <header>
+        <div class="logo"><img src="img/bilicon-low-resolution-color-logo 2.png" alt="BILICON"></div>
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="menu1">
+                <a href="index.html">Home</a>
+                <a href="About us.html">About</a>
+                <a href="Contact Us.html">Contact Us</a>
+            </div>
+            <div class="menu2">
+                <a href="signup.html" class="different">Sign Up</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <!-- <header>
         <div class="container navbar">
             <div class="right-side">
                 <div class="logo">
@@ -44,8 +65,8 @@
                 <a href="login.html" target="_parent" rel="noopener noreferrer"><button class="login-btn">Login</button></a>
             </div>
         </div>
-    </header>
-
+    </header> -->
+    <!-- 
     <section class="showcase">
         <div class="container signup-form">
             <div>
@@ -54,19 +75,24 @@
             <form class="form-signup" action="" method="post">
                 <div>
                     <div class="user-info">
+                        <label class="input-label" for="name">Name</label>
+                        <br>
+                        <input type="text" placeholder="john Doe" name="name" id="name" required>
+                    </div>
+                    <div class="user-info">
                         <label class="input-label" for="user-email">Email</label>
                         <br>
-                        <input type="email" placeholder="example@gmail.com" name="Email" id="user-email" required>
+                        <input type="email" placeholder="example@gmail.com" name="Email" id="email" required>
                     </div>
                     <div class="user-info">
                         <label for="user-password">Password</label>
                         <br>
-                        <input type="password" placeholder="Enter your password" name="password1" id="user-password" required>
+                        <input type="password" placeholder="Enter your password" name="password1" id="password" required>
                     </div>
                     <div class="user-info">
                         <label for="user-passowrd">Reapeat passowrd</label>
                         <br>
-                        <input type="password" placeholder="Repeat password" name="password2" id="user-passowrd">
+                        <input type="password" placeholder="Repeat password" name="passwordC" id="passwordConfirm">
                     </div>
                     <div class="questions">
                         <div>
@@ -89,6 +115,25 @@
                 </p>
             </div>
 
+        </div>
+    </section> -->
+
+    <section>
+        <div class="contact">
+            <h1>Create a new account</h1>
+            <form class="form-login" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="************" required>
+                <label for="passwordConfirm">PasswordConfirm</label>
+                <input type="password" id="passwordConfirm" placeholder="***********" required>
+                <input class="submit" type="submit" value="Signup">
+
+            </form>
+            <p>Already have an account?<a href="login.html">Login</a></p>
         </div>
     </section>
 
