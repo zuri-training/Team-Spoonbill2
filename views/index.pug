@@ -8,21 +8,23 @@ head
 link(rel='stylesheet' href='/css/styles.css')
 //- script(type='module' src='js/index.js' defer='')
 script(src='https://kit.fontawesome.com/212fe58092.js' crossorigin='anonymous')
-header
-  .logo
-    img(src='/img/bilicon-low-resolution-color-logo 2.png' alt='BILICON')
-  nav.navbar
-    a.toggle-button(href='#')
-      span.bar
-      span.bar
-      span.bar
-    .menu1
-      a.active(href='/') Home
-      a(href='/about') About
-      a(href='/contact') Contact Us
-    .menu2
-      a.different(href='/login') Sign Up
-      a(href='/login') Login
+
+include _header
+//- header
+//-   .logo
+//-     img(src='/img/bilicon-low-resolution-color-logo 2.png' alt='BILICON')
+//-   nav.navbar
+//-     a.toggle-button(href='#')
+//-       span.bar
+//-       span.bar
+//-       span.bar
+//-     .menu1
+//-       a.active(href='/') Home
+//-       a(href='/about') About
+//-       a(href='/contact') Contact Us
+//-     .menu2
+//-       a.different(href='/login') Sign Up
+//-       a(href='/login') Login
 section.Section1
   h1 Quickly generate your favicon from scratch using text and image
   p
@@ -103,43 +105,44 @@ section.Section4
       p
         | Create a logo and website icon in no time. That&apos;s faster than you can say Bilicon.
 
-footer
-  .foot
-    ul
-      li
-        b Products
-      li
-        a(href='#') Generate icon
-      li
-        a(href='#') Download icons
-      li
-        a(href='#') Refer and earn
-      li
-        a(href='#') Frequently asked questions
-  .foot
-    ul
-      li
-        b Developers
-      li
-        a(href='#') Api Documentation
-      li
-        a(href='#') Api reference
-      li
-        a(href='#') Developer support
-  .foot
-    ul
-      li
-        b Contact Us
-      li
-        a.twitter(href='#')
-          | Twitter 
-          i.fa-brands.fa-twitter
-      li
-        a.instagram(href='#')
-          | Instagram 
-          i.fa-brands.fa-instagram
-      li
-        a(href='#') Privacy Policy
-      li
-        a(href='#') Terms of use
-script(src='/js/bundle.js')
+include _footer
+//- footer
+//-   .foot
+//-     ul
+//-       li
+//-         b Products
+//-       li
+//-         a(href='#') Generate icon
+//-       li
+//-         a(href='#') Download icons
+//-       li
+//-         a(href='#') Refer and earn
+//-       li
+//-         a(href='#') Frequently asked questions
+//-   .foot
+//-     ul
+//-       li
+//-         b Developers
+//-       li
+//-         a(href='#') Api Documentation
+//-       li
+//-         a(href='#') Api reference
+//-       li
+//-         a(href='#') Developer support
+//-   .foot
+//-     ul
+//-       li
+//-         b Contact Us
+//-       li
+//-         a.twitter(href='#')
+//-           | Twitter 
+//-           i.fa-brands.fa-twitter
+//-       li
+//-         a.instagram(href='#')
+//-           | Instagram 
+//-           i.fa-brands.fa-instagram
+//-       li
+//-         a(href='#') Privacy Policy
+//-       li
+//-         a(href='#') Terms of use
+//- script(src='/js/bundle.js')
