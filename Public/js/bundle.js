@@ -5364,7 +5364,7 @@ var signup = /*#__PURE__*/function () {
             _context.next = 3;
             return (0, _axios.default)({
               method: 'POST',
-              url: '/api/v1/users/signup',
+              url: 'http://localhost:5000/api/users/signup',
               data: {
                 name: name,
                 email: email,
@@ -5409,7 +5409,7 @@ var menu = document.getElementsByClassName('menu')[0];
 toggleButton.addEventListener('click', function () {
   menu.classList.toggle('active');
 });
-// const loginForm = document.querySelector('.form-login');
+var loginForm = document.querySelector('.form-login');
 var signupForm = document.querySelector('.form-signup');
 
 // window.onload = function() {
@@ -5462,7 +5462,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55907" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53088" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
