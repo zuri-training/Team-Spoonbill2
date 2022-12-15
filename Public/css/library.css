@@ -1,0 +1,224 @@
+/*Start of CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #FCFAFA;
+    font-family: outfit, sans-serif;
+  }
+
+/*navigation*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #E7D4F7;
+    padding: 0.4em;
+}
+.logo {
+    margin-right: 4em;
+}
+
+.logo>img {
+    width: 322.44;
+    height: 36px;
+    line-height: 45.36px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 30.24px;
+    margin-right: 3em;
+    letter-spacing: 0em;
+}
+
+.menu1 {
+    padding: 1em 0.7em;
+}
+
+.menu1 a {
+    color: #BFBDC2;
+}
+
+.menu2 {
+    padding: 1em 0.7em;
+    margin-left: 9em;
+}
+
+.menu2 a {
+    color:#877497;
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+.menu2>.different {
+
+    color: #463356;
+}
+
+.menu1 a.active {
+    color: #9D54DE;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .70rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* section */
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    margin: 98px 0 117px 0;
+  }
+
+  .container{
+    width: 800px;
+    height: 744px;
+    box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);  
+  }
+
+  form {
+    width: 200px;
+    margin-left: 94px;
+}
+
+
+form .fa-search{
+    align-self: center;
+}
+
+form ::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);    
+}
+
+form input {
+    color: white;
+    width: 300%;
+    margin: 48px 0px;
+    padding: 8px;
+    border: 1px solid #A9A9A9;
+    border-radius: 6px;
+   }
+
+   .container ul{
+    margin-left: 90px;
+   }
+
+   .container ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 24px;
+    margin: 0 5px;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: #272727;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.container ul li a.active{
+    color: #fff;
+    background-color: #CEA7EE;
+}
+
+.row1 .btn{
+    border: none;
+    margin-left: 18px;
+    width: 48px;
+    height: 48px;
+    background-color: #D9D9D9;
+}
+
+
+.container .boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 32px;
+}
+
+.container .boxes .row1{
+    margin-bottom: 24px;
+}
+
+
+.container button {
+    background-color: #FFC242;
+    color: #fff;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 14px 59px 14px 59px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: 400;
+    float: right;
+    margin-right: 100px;
+}
+
+/*footer*/
+footer {
+    background-color: #E7D4F7;
+    padding: 1em;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7em;
+}
+
+footer ul li {
+    color: #000000;
+    list-style-type: none;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.foot a {
+    color: #000000E5;
+    font-weight: 400;
+    line-height: 45px;
+    text-decoration: none;
+}
+
+.foot img { 
+    width: 31.75px;
+    height: 30.81px;
+}

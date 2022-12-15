@@ -171,8 +171,8 @@ input {
 
 }
 
-input:hover{
-  border: 3px solid  #B67BE6 ;
+input:hover {
+  border: 3px solid #B67BE6;
 }
 
 input:focus {
@@ -200,7 +200,7 @@ input:focus {
   color: #FA8C02;
 }
 
-.signin-link:hover{
+.signin-link:hover {
   font-size: 18px;
 }
 
@@ -239,8 +239,8 @@ input:focus {
   margin: 40px 0 0 0;
 }
 
-.submit-button:hover{
-  background:  #9e66cb;
+.submit-button:hover {
+  background: #9e66cb;
 }
 
 .user-option {
@@ -264,6 +264,6 @@ input:focus {
 
 }
 
-.google-link:hover{
+.google-link:hover {
   font-size: 24px;
 }
