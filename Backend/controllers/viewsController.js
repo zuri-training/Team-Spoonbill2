@@ -26,7 +26,17 @@ exports.getSignup = catchAsync(async (req, res ) => {
 exports.aboutIn = catchAsync(async (req, res) => {
     res.status(200).render('about in')
 })
+
 exports.getConversion = catchAsync(async (req, res) => {
     res.status(200).render('conversion')
+})
+
+exports.getHistory = catchAsync(async (req, res) => {
+    res.status(200).render('history')
+    
+})
+
+exports.getLibrary = catchAsync(async (req, res) => {
+    res.status(200).render('library')
 })
 

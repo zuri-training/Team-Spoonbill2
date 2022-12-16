@@ -10,9 +10,10 @@ head
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Outfit&display=swap' rel='stylesheet')
 main
+  include _header
   .nav
-    ul.navigation(type='none' style='display: flex')
-      li.mainN
+    //- ul.navigation(type='none' style='display: flex')
+    //-   li.mainN
         img.Logo(src='img/bilicon-low-resolution-color-logo 2.png' alt='logo')
       li.mainNav
         a.active(href='img/conversionPage.html' style='text-decoration: none') Home
@@ -25,16 +26,19 @@ main
       li.mainNa
         a(href='' style='text-decoration: none; color: #b3a1be')
           | Johndoe12
-        img.user(src='img/UserIcon.png' alt='user' style='height: 18px')
+        img.user(src='img/UserIcon.png' alt='user' style='height: 18px')*/
   .hero1
     .hero3(style='width: 50%')
-      .input
-        | Drop your image here
-        br
-        | jpg/png/gif
-        br
-        | maximum size 5mb
-        input(type='file' accept='image/*')
+      form#download(action='/api/users/uploads' method='post')
+        .input
+          | Drop your image here
+          br
+          | jpg/png/gif
+          br
+          | maximum size 5mb
+          input(type='file' accept='image/*')
+        button#generate Generate Favicon
+   
       .bodyText
         div
           .faq(style='width: 100%; font-size: 16px')
