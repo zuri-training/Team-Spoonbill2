@@ -7,8 +7,10 @@
 
 
 
-import { login } from './login';
+import { login, logout } from './login';
 import { signup } from './signup';
+
+const logOutBtn = document.querySelector('.logout')
 
 const loginForm = document.querySelector('.form-login');
 const signupForm = document.querySelector('.form-signup');
@@ -45,5 +47,7 @@ if (signupForm)
 
     });
 
+
+if (logOutBtn) logOutBtn.addEventListener('click', logout);
 
   

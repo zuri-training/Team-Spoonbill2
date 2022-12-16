@@ -12,6 +12,7 @@ body {
     box-sizing: border-box;
 }
 
+
 /*navigation*/
 
 header {
@@ -22,6 +23,7 @@ header {
     background-color: #E7D4F7;
     padding: 0.4em;
 }
+
 .logo {
     margin-right: 4em;
 }
@@ -39,7 +41,7 @@ nav {
 nav a {
     color: #000000;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30.24px;
     margin-right: 3em;
     letter-spacing: 0em;
@@ -47,6 +49,10 @@ nav a {
 
 .menu1 {
     padding: 1em 0.7em;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .menu1 a {
@@ -93,6 +99,7 @@ nav a {
     background-color: white;
     border-radius: 10px;
 }
+
 
 /*First Section*/
 
@@ -144,6 +151,7 @@ nav a {
     font-size: 20px;
 }
 
+
 /*Second Section*/
 
 .Section2 {
@@ -181,19 +189,19 @@ nav a {
 }
 
 .box2 p {
-   font-size: 24px;
-   font-weight: 300;
-   line-height: 42px;
-   letter-spacing: 0em;
-
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 42px;
+    letter-spacing: 0em;
 }
+
 
 /*Third Section*/
 
 .Section3 {
     letter-spacing: 0em;
     color: #000000;
-    background-color:  #FFFFFF;
+    background-color: #FFFFFF;
     padding: 2em 4em;
 }
 
@@ -255,7 +263,7 @@ nav a {
     line-height: 40px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: -.1em;   
+    margin-top: -.1em;
 }
 
 .box1-1 p {
@@ -278,6 +286,7 @@ nav a {
     box-sizing: border-box;
 }
 
+
 /*Fourth Section*/
 
 .Section4 {
@@ -295,6 +304,7 @@ nav a {
     text-align: center;
     margin-bottom: 2.4em;
 }
+
 
 /*Fourth Section's Article*/
 
@@ -453,7 +463,9 @@ nav a {
     top: 10%;
 }
 
+
 /*footer*/
+
 footer {
     background-color: #E7D4F7;
     padding: 1em;
@@ -478,7 +490,7 @@ footer ul li {
     text-decoration: none;
 }
 
-.foot img { 
+.foot img {
     width: 31.75px;
     height: 30.81px;
 }

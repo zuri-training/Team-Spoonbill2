@@ -35,7 +35,7 @@ const upload = multer({
     // fileFilter:multerFilter
 });
 
-exports.uploads = upload.single('image');
+// exports.uploads = upload.single('image');
 
 
 // console.log(req.file.path);
@@ -119,12 +119,14 @@ exports.uploads = upload.single('image');
 //     });
 // }
 
-exports.generateFavicon = catchAsync(async (req, res) => {
+exports.generateFavicon = upload.single('image'), catchAsync(async(req, res) => {
     const image = req.file;
-    console.log(image.path);
+    // console.log(image.path);
     // const source= 'Backend\Icons\images\image_1670919931424.png'
     // generate(image.path, icons.configuration);
-   
+    if (image) {
+        console.log(image.path);
+   }
     // Generate favicons and related html
      await favicons.favicons(image.path, icons.configuration).then((response) => {
         const html = response.html;

@@ -7,6 +7,7 @@ const { favicons } = require('favicons');
 const icons = require('./Icons/iconsFactory/iconsFactory');
 const fs = require('fs');
 const cors = require('cors');
+const cookieParser = require('cookie-parser');
 const path = require('path');
 const viewRouter= require('./routes/viewRoutes')
 // const router =express.Router()
@@ -40,6 +41,9 @@ app.use(express.static(path.join(__dirname, '../Public')));
 // app.use('/img', express.static(path.resolve(__dirname, "Public/img")));
 // app.use('/js', express.static(path.resolve(__dirname, "Public/js")));
 
+app.use(express.json({ limit: '10kb' }));
+app.use(express.urlencoded({ extended: true, limit: '10kb' }))
+app.use(cookieParser())
 
 
 // router.get('/',function(req,res){

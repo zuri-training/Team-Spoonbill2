@@ -6,10 +6,22 @@ header
       span.bar
       span.bar
       span.bar
-    .menu1
-      a.active(href='/') Home
-      a(href='/about') About
-      a(href='/contact') Contact Us
-    .menu2
-      a.different(href='/signup') Sign Up
-      a(href='/login') Login
+    if user  
+      .menu1
+        a.active(href='/') Home
+        a.active(href='/about') About
+        a.active(href='/contact') Contact Us
+     
+        a.active(href='/history') History
+        a.active(href='/conversion') Conversion
+        a.active(href='#')
+        a.active.logout(href='/') logout
+    else
+      .menu1
+        a.active(href='/') Home
+        a.active(href='/about') About
+        a.active(href='/contact') Contact Us
+      .menu2
+        a.different(href='/signup') Sign Up
+        a(href='/login') Login
+      
