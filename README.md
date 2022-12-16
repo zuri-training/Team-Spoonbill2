@@ -20,8 +20,9 @@
     <br> 
 </p>
 
-## Team-Spoonbill2
-
+# Team-Spoonbill2
+## The project has been completed and deployed on Render server
+## ***Link to the server*** [Bilicon](https://favicongen-teamspoonbill.onrender.com/)
 
 Since this is the beginning stage of our project, We shall use the resources link below to add the required links as indicated
 
@@ -63,7 +64,7 @@ We shall create another contributors.md file where we will add our names and par
 
 - Unauthenticated user can view:
 
-  - [Home Page]()
+  - [Home Page](https://favicongen-teamspoonbill.onrender.com/)
   - [Browse and interact with the documentation]()
   - [Register to view more details]()
   - [No access to use until registered]()
